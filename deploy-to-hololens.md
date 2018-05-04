@@ -30,3 +30,4 @@
     - select: x86
     - select: device
     - click: run
+	- note: you may need to go to the setting > update & security > Developer mode on the HolenLens to get the PIN

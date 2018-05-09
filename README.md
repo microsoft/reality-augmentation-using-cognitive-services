@@ -46,4 +46,4 @@ You also need to have available the following cloud services:
 1. [**06-Translate**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/06-Translate/06-Translate.md)
 1. [**07-Handwriting**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/07-Handwriting/07-Handwriting.md)
 1. [**08-FacialRecognition**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/08-FacialRecognition/08-FacialRecognition.md)
-1. [**09-LocalModel**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/09-LocalModel/09-LocalModel.md)
+1. [**09-CustomModel**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/09-CustomModel/09-CustomModel.md)

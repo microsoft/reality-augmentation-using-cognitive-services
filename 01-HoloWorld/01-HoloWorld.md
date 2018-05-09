@@ -69,7 +69,7 @@ Follow these instructions to deploy and run the application in the emulator:
    - click **Player Settings...**
    - click **XR Settings**
    - check **Vuforia Augmented Reality**, accept the conditions, click **Finish**
-1. Create UI"
+1. Create UI
 
    ![delete camera and light](setup/delete-camera-and-light-labelled-resized-66.png)
 

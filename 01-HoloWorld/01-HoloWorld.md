@@ -9,13 +9,14 @@ Follow these instructions to deploy and run the application in the emulator:
 1. Create Unity project
    - open **Unity** (Note: in your download folder, double-click **Unity/Editor/Unity.exe**
    - click **Projects** > **New**
-   ![My large image](setup/create-project-labelled-resized-66.png)
+   ![create project](setup/create-project-labelled-resized-66.png)
    - for **Project name** type **HoloWorld**
    - for **Location** type **`<working-dir>`**
    - for **Template** select **3D** (Note: the default)
    - click **Create project**
 1. Configure platform
    - menu **File** > **Build Settings...**
+   ![configure platform](setup/configure-platform-labelled-resized-66.png)
    - select **Universal Windows Platform**
    - click **Open Download page**
    - save the installer executable to `<working-dir>`

@@ -2,6 +2,8 @@
 
 This demo shows how to overlay text in the augmented reality camera running in the Unity Emulator.
 
+![thumbs up](setup/thumbs-up-resized-66.png)
+
 ## Setup Instructions
 
 Follow these instructions to deploy and run the application in the emulator:
@@ -63,22 +65,40 @@ Follow these instructions to deploy and run the application in the emulator:
    - menu **File** > **Build Settings...**
 
    ![check vuforia](setup/check-vuforia-labelled-resized-66.png)
-   
+
    - click **Player Settings...**
    - click **XR Settings**
    - check **Vuforia Augmented Reality**, accept the conditions, click **Finish**
 1. Create UI"
-   - right-click: **MainCamera** > **Delete**
+
+   ![delete camera and light](setup/delete-camera-and-light-labelled-resized-66.png)
+
+   - select: **MainCamera** and **Directional Light** (Note: Hold down Ctrl key for multi-select)
+   - right click: select **Delete**
    - right click **Directional Light** > **Delete**
+
+   ![ar camera](setup/ar-camera-labelled-resized-66.png)
+
    - click menu option **GameObject** > **Vuforia** > **AR Camera**
    - click **Import**
-   - select **Untitled**
+
+   ![create text](setup/create-text-labelled-resized-66.png)
+
+   - select **SampleScene**
    - click **Create** > **UI** > **Text**
+
+   ![text properties](setup/text-properties-labelled-resized-66.png)
+
    - set **Text** to **Holo World!**
    - set **Font Size** to **24**
-   - set **Color** to **white** (easily done by dragging ball to upper left)
+
+   ![rgb](setup/rgb-labelled-resized-66.png)
+
+   - set **Color** to **white** (Note: set **R**, **G**, and **B** to **255**)
    - menu **File** > **Save Scenes**
-   - for File name type **Scene1** and click **Save**
    - menu **File** > **Save Project**
 1. Run the demo
-   - click **Run** You will see a live camera view with the words "Holo World!" overlayed at the bottom
+
+   ![play](setup/play-labelled-resized-66.png)
+
+   - click **Run**. You will see a live camera view overlayed with the words "Holo World!"

@@ -97,7 +97,8 @@ Follow these instructions to deploy and run the application in the emulator:
    - set **Color** to **white** (Note: set **R**, **G**, and **B** to **255**)
    - menu **File** > **Save Scenes**
    - menu **File** > **Save Project**
-1. Run the demo
+
+## Run the demo
 
    ![play](setup/play-labelled-resized-66.png)
 

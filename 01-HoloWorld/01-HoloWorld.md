@@ -25,29 +25,34 @@ Follow these instructions to deploy and run the application in the emulator:
    - click **Next** > accept the terms of service > click **Next** > **Next**, select the download folder, click **Next** > **Finish**
 1. Configure Vuforia
    - start **Unity**
-   - select **HoloWorld**
+   - click **Projects** > **HoloWorld**
    - menu **File** > **Build Settings...**
+   ![switch platform](setup/switch-platform-labelled-resized-66.png)
    - select **Universal Windows Platform**
    - click **Switch Platform**
    - select **HoloLens** for **Target Device**
+   ![other settings](setup/other-settings-labelled-resized-66.png)
    - click **Player Settings...**
    - click **Other Settings**
    - select **.NET** for **Scripting Backend**
+   ![capabilities](setup/capabilities-labelled-resized-66.png)
    - click **Publishing Settings**
    - for **Capabilities** check **InternetClient**, **WebCam**, and **Microphone**
+   ![xr settings](setup/xr-settings-labelled-resized-66.png)
    - click **XR Settings**
    - check **Virtual Reality Supported**
    - click **Vuforia Augmented Reality**
    - save the installer executable to `<working-dir>`
    - close **Unity**
    - double click the installer executable
-   - click **Next** > accept the terms of service > click **Next** > **Next** > **Next** > **Finish**
+   - click **Next** > accept the terms of service > click **Next** > **Next**, select the download folder, click **Next** > **Finish**
    - start **Unity**
-   - select **HoloWorld**
+   - click **Projects** > **HoloWorld**
    - menu **File** > **Build Settings...**
+   ![check vuforia](setup/check-vuforia-labelled-resized-66.png)
    - click **Player Settings...**
    - click **XR Settings**
-   - check **Vuforia Augmented Reality**
+   - check **Vuforia Augmented Reality**, accept the conditions, click **Finish**
 1. Create UI"
    - right-click: **MainCamera** > **Delete**
    - right click **Directional Light** > **Delete**

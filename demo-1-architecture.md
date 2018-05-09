@@ -1,9 +1,0 @@
-# Architecture
-
-This shows what the architecture looks like when using the desktop emulator:
-
-![demo-1-architecture-emulator](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/master/setup/images/demo-1-architecture-emulator.png)
-
-This shows what the architecture look like when using the HoloLens:
-
-![demo-1-architecture-hololens](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/master/setup/images/demo-1-architecture-hololens.png)

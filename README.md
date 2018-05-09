@@ -16,12 +16,11 @@ This tutorial requires that you have a Windows computer with a camera. The follo
 
 1. [Unity Editor](https://unity3d.com/get-unity/download)
    - scroll down and under **Resources** click **Older versions of Unity**
-   - scroll down and for **Unity 2017.4.1** click **Downloads (Win)** (NOTE: this is the most recent as of this writing)
+   - scroll down and for **Unity 2018.1.0** click **Downloads (Win)** (NOTE: this is the most recent as of this writing)
    - select **Unity Editor (64 bit)**
    - choose a local working directory, which we'll refer to as `<working-dir>`, such as **c:\hololens**
    - save the installer executable to `<working-dir>` and double click it
-   - click **Next**, accept the terms of service, click **Next**, select the download folder, and click **Next**
-   - check **Run Unity** and click **Finish**
+   - click **Next**, accept the terms of service, click **Next**, click **Next**, select the download folder, click **Next**, and click **Finish**
 
 You also need to have available the following cloud services:
 

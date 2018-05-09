@@ -7,10 +7,12 @@ This demo shows how to overlay text in the augmented reality camera running in t
 Follow these instructions to deploy and run the application in the emulator:
 
 1. Create Unity project
-   - open **Unity**
+   - open **Unity** (Note: in your download folder, double-click **Unity/Editor/Unity.exe**
    - click **Projects** > **New**
+   ![My large image](setup/create-project-labelled-resized-66.png)
    - for **Project name** type **HoloWorld**
    - for **Location** type **`<working-dir>`**
+   - for **Template** select **3D** (Note: the default)
    - click **Create project**
 1. Configure platform
    - menu **File** > **Build Settings...**

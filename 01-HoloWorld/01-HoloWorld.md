@@ -9,14 +9,18 @@ Follow these instructions to deploy and run the application in the emulator:
 1. Create Unity project
    - open **Unity** (Note: in your download folder, double-click **Unity/Editor/Unity.exe**
    - click **Projects** > **New**
+
    ![create project](setup/create-project-labelled-resized-66.png)
+
    - for **Project name** type **HoloWorld**
    - for **Location** type **`<working-dir>`**
    - for **Template** select **3D** (Note: the default)
    - click **Create project**
 1. Configure platform
    - menu **File** > **Build Settings...**
+
    ![configure platform](setup/configure-platform-labelled-resized-66.png)
+
    - select **Universal Windows Platform**
    - click **Open Download page**
    - save the installer executable to `<working-dir>`
@@ -27,18 +31,26 @@ Follow these instructions to deploy and run the application in the emulator:
    - start **Unity**
    - click **Projects** > **HoloWorld**
    - menu **File** > **Build Settings...**
+
    ![switch platform](setup/switch-platform-labelled-resized-66.png)
+
    - select **Universal Windows Platform**
    - click **Switch Platform**
    - select **HoloLens** for **Target Device**
+
    ![other settings](setup/other-settings-labelled-resized-66.png)
+
    - click **Player Settings...**
    - click **Other Settings**
    - select **.NET** for **Scripting Backend**
+
    ![capabilities](setup/capabilities-labelled-resized-66.png)
+
    - click **Publishing Settings**
    - for **Capabilities** check **InternetClient**, **WebCam**, and **Microphone**
+
    ![xr settings](setup/xr-settings-labelled-resized-66.png)
+
    - click **XR Settings**
    - check **Virtual Reality Supported**
    - click **Vuforia Augmented Reality**
@@ -49,7 +61,9 @@ Follow these instructions to deploy and run the application in the emulator:
    - start **Unity**
    - click **Projects** > **HoloWorld**
    - menu **File** > **Build Settings...**
+
    ![check vuforia](setup/check-vuforia-labelled-resized-66.png)
+   
    - click **Player Settings...**
    - click **XR Settings**
    - check **Vuforia Augmented Reality**, accept the conditions, click **Finish**

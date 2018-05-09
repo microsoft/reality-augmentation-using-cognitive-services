@@ -22,7 +22,7 @@ Follow these instructions to deploy and run the application in the emulator:
    - save the installer executable to `<working-dir>`
    - close **Unity**
    - double click the installer executable
-   - click **Next** > accept the terms of service > click **Next** > **Next** > **Next** > **Finish**
+   - click **Next** > accept the terms of service > click **Next** > **Next**, select the download folder, click **Next** > **Finish**
 1. Configure Vuforia
    - start **Unity**
    - select **HoloWorld**

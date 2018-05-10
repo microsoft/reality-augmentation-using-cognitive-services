@@ -53,3 +53,7 @@ You also need to have available the following cloud services:
 1. [**07-Handwriting**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/07-Handwriting/07-Handwriting.md)
 1. [**08-FacialRecognition**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/08-FacialRecognition/08-FacialRecognition.md)
 1. [**09-CustomModel**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/09-CustomModel/09-CustomModel.md)
+
+# Contributing
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

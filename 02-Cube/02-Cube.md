@@ -8,15 +8,13 @@ This demo shows how to recognize and track an image, and draw a cube on top of i
 
 For this demo, we will build upon what we did for the previous demo.
 
-1. Clone this repo into a local download directory. Example:
-   - choose a local repo directory, which we'll refer to as `<working-dir>`, such as **c:\hololens**
-   - open a DOS command prompt
-   - type **mkdir `<working-dir>`**
-   - type **cd `<working-dir>`**
-   - type **git clone https://github.com/Microsoft/reality-augmentation-using-cognitive-services**
-   - type **cd reality-augmentation-using-cognitive-services**
-   - type **git checkout -b mlads**
-   - type **git pull origin mlads**
+1. Download the contents of this repo as a zip into a local working directory
+
+   ![download zip](setup/download-zip-labelled-resized-66.png)
+
+   - If you haven't already, create a local working directory which we'll refer to as `<working-dir>` (Example: **c:\hololens**)
+   - Click **Clone or download** > **Download ZIP**
+   - Save and extract the zip into `<working-dir>`
 1. Create Vuforia license key
    - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
    - Login

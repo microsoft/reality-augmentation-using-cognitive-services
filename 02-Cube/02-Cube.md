@@ -2,17 +2,21 @@
 
 This demo shows how to recognize and track an image, and draw a cube on top of it. When running, it looks like this:
 
-![demo](images/demo-1-running.png)
+![running](setup/demo2-running.png)
 
 ## Setup Instructions
 
 For this demo, we will build upon what we did for the previous demo.
 
-1. Clone this repo (or download as zip and extract) into a local download directory. Example:
+1. Clone this repo into a local download directory. Example:
    - choose a local repo directory, which we'll refer to as `<working-dir>, such as **c:\hololens**
+   - open a DOS command prompt
    - type **mkdir `<working-dir>`**
    - type **cd `<working-dir>`**
    - type **git clone https://github.com/Microsoft/reality-augmentation-using-cognitive-services**
+   - type **cd reality-augmentation-using-cognitive-services**
+   - type **git checkout -b mlads**
+   - type **git pull origin mlads**
 1. Create Vuforia license key
    - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
    - Login
@@ -28,55 +32,79 @@ For this demo, we will build upon what we did for the previous demo.
    - Select **Device**
    - Click **Create**
    - Under **Database** click **HoloWorld**
+
+   ![add target](setup/add-target-labelled-resized-66.png)
+
    - Click **Add Target**
    - For **Type** select **Single Image**
    - For **File** click **Browse...**
-   - select: **`<local-repo-dir>`\reality-augmentation-using-cognitive-services\setup\target-images\charlie-card.jpg**
-   - click: **Open**
-   - type: Width: **5**
-   - type: Name: **charlie-card**
-   - click: **Add**
+   - Select **`<working-dir>`\reality-augmentation-using-cognitive-services\images\businesscard.png**
+   - Click **Open**
+   - For **Width** type **5**
+   - For **Name** type **businesscard**
+   - Click **Add**
 1. Download Vuforia image database
-   - click: **Download Database (All)**
-   - select: **Unity Editor**
-   - click: **Download**
-   - click: **Save As** > **`<local-repo-dir>`\reality-augmentation-using-cognitive-services**
-   - click: **Save**
+
+   ![click download database](setup/click-download-database-labelled-resized-66.png)
+
+   - Click **Download Database (All)**
+
+   ![download database](setup/download-database-labelled-resized-66.png)
+
+   - Select **Unity Editor**
+   - Click **Download**
+   - Click **Save As** > **`<working-dir>`\HoloWorld.unitypackage**
+   - Click **Save**
 1. Import Vuforia image database into Unity project
-   - from: Unity: project: **AugmentedRealityDemo**
-   - menu: **Assets** > **Import Package** > **Custom Package...**
-   - browse: **`<local-repo-dir>`\reality-augmentation-using-cognitive-services\AugmentedRealityDemo\AugmentedRealityDemo.unitypackage**
-   - click: **open** > **All** > **Import**
-1. Restart Unity Editor
-   - click **Projects** > **AugmentedRealityDemo**
+   - Start **Unity**
+   - Click **Projects** > **HoloWorld**
+
+   ![import package](setup/import-package-labelled-resized-66.png)
+
+   - Menu **Assets** > **Import Package** > **Custom Package...**
+   - Browse: **`<working-dir>`\Hololens\HoloWorld.unitypackage**
+
+   ![import all](setup/import-all-labelled-resized-66.png)
+
+   - Click **Open** > **All** > **Import**
+
 1. Create cube on top of recognized image in Unity project
-   - right-click: **MixedRealityCameraParent** > **Delete**
-   - right-click: **Default Cursor** > **Delete**
-   - right-click: **InputManager** > **Delete**
-   - right click **Directional Light** > **Delete**
-   - click menu option **GameObject** > **Vuforia** > **AR Camera**
-   - click **Import** to import assets
-   - select menu option **Edit** > **Project Settings** > **Player**
-   - expand **XR Settings**, check **Vuforia Augmented Realit**, and click **Accept**
-   - select: **AR Camera** > **Inspector** tab
-   - click: **Open Vuforia configuration**
-   - paste: App License Key: **`<vuforia-license-key>`**
-   - check: Databases: **Load AugmentedRealityDemo database**
-   - check: **Activate**
-   - click menu option **GameObject** > **Vuforia** > **Image**
-   ??????- drag: under: AR Camera: **ImageTarget**
-   - select: **ImageTarget**
-   - type: name: **CharlieCardTarget**
-   - select: Database: **AugmentedRealityDemo**
-   - right click: **CharlieCardTarget**
+
+   ![vuforia configuration](setup/vuforia-configuration-labelled-resized-66.png)
+
+   - Click **AR Camera** > **Open Vuforia configuration**
+
+   ![license key](setup/license-key-labelled-resized-66.png)
+
+   - For **App License Key** paste your **`<vuforia-license-key>`**
+
+   ![image target](setup/image-target-labelled-resized-66.png)
+
+   - Select **SampleScene**
+   - Click **Create** > **Vuforia** > **Image**
+
+   ![target properties](setup/target-properties-labelled-resized-66.png)
+
+   - For **ImageTarget** type **BusinessCardTarget**
+   - For **Database** select **HoloWorld**
+   - For **Image Target** select **businesscard**
+
+   ![create cube](setup/create-cube-labelled-resized-66.png)
+
+   - right click: **BusinessCardTarget**
    - select: **3D Object** > **Cube**
-   - type: position: y: **0.5**
-   - type: scale: x: **0.25**
-   - type: scale: y: **0.25**
-   - type: scale: z: **0.25**
-   - menu: **File** > **Save Scenes**
-   - type: **Scene1**
-   - menu: **File** > **Save Project**
-1. Run the Demo
-   - print: **`<local-repo-dir>`\reality-augmentation-using-cognitive-services\setup\target-images\charlie-card.jpg**
-   - click: **run arrow**. If you hold the printed image of the Charlie Card in front of your computer's camera, you will see cube on top of it.
+
+   ![cube properties](setup/cube-properties-labelled-resized-66.png)
+
+   - For **position** > **y** type **0.5**
+   - for **scale** > **x** type **0.25**
+   - for **scale** > **y** type **0.25**
+   - For **scale** > **z** type **0.25**
+   - menu **File** > **Save Scenes**
+   - menu **File** > **Save Project**
+
+## Run the demo
+
+![play](setup/play-labelled-resized-66.png)
+
+- click **Run**. If you hold the business card in front of your computer's camera, you will see cube on top of it.

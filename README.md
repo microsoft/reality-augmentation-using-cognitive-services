@@ -27,6 +27,12 @@ This tutorial requires that you have a Windows computer with a camera. The follo
    - Save the installer executable to your `Downloads` folder and double click it
    - Click **Next**, accept the terms of service, click **Next**, click **Next**, select the download folder, click **Next**, and click **Finish**
 
+1. Git
+   - If you do not have Git installed:
+       - Navigate to [Git](https://git-scm.com/download/win)
+       - Save the installed executable to your `Downloads` folder and double click it
+       - Click **Next** multiple times and select desired configuration (defaults will work) and click **Install**
+
 You also need to have available the following cloud services:
 
 1. Microsoft Computer Vision API

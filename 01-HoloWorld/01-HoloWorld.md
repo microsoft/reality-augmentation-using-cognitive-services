@@ -84,12 +84,12 @@ Follow these instructions to deploy and run the application in the emulator:
 
    ![create text](setup/create-text-labelled-resized-66.png)
 
-   - select **SampleScene**
+   - in the ***Hierarchy** window on the left, select **SampleScene**
    - click **Create** > **UI** > **Text**
 
    ![text properties](setup/text-properties-labelled-resized-66.png)
 
-   - set **Text** to **Holo World!**
+   - in the **Inspector** window in the right, set **Text** to **Holo World!**
    - set **Font Size** to **24**
 
    ![rgb](setup/rgb-labelled-resized-66.png)

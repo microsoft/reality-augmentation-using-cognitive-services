@@ -15,7 +15,7 @@ Follow these instructions to deploy and run the application in the emulator:
    ![create project](setup/create-project-labelled-resized-66.png)
 
    - for **Project name** type **HoloWorld**
-   - for **Location** type **`<working-dir>`**
+   - for **Location**, accept the default or type your own choice
    - for **Template** select **3D** (Note: the default)
    - click **Create project**
 1. Configure platform
@@ -25,7 +25,7 @@ Follow these instructions to deploy and run the application in the emulator:
 
    - select **Universal Windows Platform**
    - click **Open Download page**
-   - save the installer executable to `<working-dir>`
+   - save the installer executable to `Downloads`
    - close **Unity**
    - double click the installer executable
    - click **Next** > accept the terms of service > click **Next** > **Next**, select the download folder, click **Next** > **Finish**
@@ -56,7 +56,7 @@ Follow these instructions to deploy and run the application in the emulator:
    - click **XR Settings**
    - check **Virtual Reality Supported**
    - click **Vuforia Augmented Reality**
-   - save the installer executable to `<working-dir>`
+   - save the installer executable to `Downloads`
    - close **Unity**
    - double click the installer executable
    - click **Next** > accept the terms of service > click **Next** > **Next**, select the download folder, click **Next** > **Finish**
@@ -84,12 +84,12 @@ Follow these instructions to deploy and run the application in the emulator:
 
    ![create text](setup/create-text-labelled-resized-66.png)
 
-   - select **SampleScene**
+   - in the ***Hierarchy** window on the left, select **SampleScene**
    - click **Create** > **UI** > **Text**
 
    ![text properties](setup/text-properties-labelled-resized-66.png)
 
-   - set **Text** to **Holo World!**
+   - in the **Inspector** window in the right, set **Text** to **Holo World!**
    - set **Font Size** to **24**
 
    ![rgb](setup/rgb-labelled-resized-66.png)

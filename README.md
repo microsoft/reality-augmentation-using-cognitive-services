@@ -5,7 +5,7 @@ Augmented reality is hot. Artificial intelligence is hot. Combining the two to c
 The application uses the [Microsoft Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/), part of Microsoft Cognitive Services, to extract meaningful text from images. [Vuforia](https://library.vuforia.com/articles/Training/Object-Recognition) is used for image detection and tracking. [Microsoft Visual Studio](https://www.visualstudio.com/) is used to create script actions that call out to the Computer Vision API and also to deploy the application to the HoloLens.
 
 # Prerequisites
-This tutorial requires that you have a Windows computer with a camera. The following software needs to be installed on your computer:
+This tutorial requires that you have a 64-bit Windows computer with a camera. The following software needs to be installed on your computer:
 
 1. Visual Studio 2017
    - If you do not have Visual Studio 2017 installed:

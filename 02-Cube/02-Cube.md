@@ -9,7 +9,7 @@ This demo shows how to recognize and track an image, and draw a cube on top of i
 For this demo, we will build upon what we did for the previous demo.
 
 1. Clone this repo into a local download directory. Example:
-   - choose a local repo directory, which we'll refer to as `<working-dir>, such as **c:\hololens**
+   - choose a local repo directory, which we'll refer to as `<working-dir>`, such as **c:\hololens**
    - open a DOS command prompt
    - type **mkdir `<working-dir>`**
    - type **cd `<working-dir>`**

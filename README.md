@@ -8,7 +8,7 @@ The application uses the [Microsoft Computer Vision API](https://azure.microsoft
 This tutorial requires that you have a Windows computer with a camera. The following software needs to be installed on your computer:
 
 1. Visual Studio 2017
-   - If you do not have Visual Studio 107 installed:
+   - If you do not have Visual Studio 2017 installed:
      - Navigate to [Download and Tools for Windows 10](https://developer.microsoft.com/en-us/windows/downloads)
      - Download a Visual Studio installer; the Community Edition is a good choice
    - Open the Visual Studio installer

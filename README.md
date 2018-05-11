@@ -42,14 +42,6 @@ You also need to have available the following cloud services:
    - Click **Register**
    - Enter information to create a development account
 
-Lastly, you'll need to download the contents of this repo
-
-1. Clone this repo (or download as zip and extract) into a local download directory. Example:
-   - choose a local repo directory, which we'll refer to as `<working-dir>, such as **c:\hololens**
-   - type **mkdir `<working-dir>`**
-   - type **cd `<working-dir>`**
-   - type **git clone https://github.com/Microsoft/reality-augmentation-using-cognitive-services**
-
 # Demos
 
 1. [**01-HoloWorld**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/01-HoloWorld/01-HoloWorld.md)

@@ -27,7 +27,7 @@ This tutorial requires that you have a 64-bit Windows computer with a camera. Th
    - Save the installer executable to your `Downloads` folder and double click it
    - Click **Next**, accept the terms of service, click **Next**, click **Next**, select the download folder, click **Next**, and click **Finish**
 
-You also need to have available the following cloud services:
+You also need to be connected to the internet and have available the following cloud services:
 
 1. Microsoft Computer Vision API
    - Navigate to [Microsoft Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services)

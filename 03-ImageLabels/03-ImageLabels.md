@@ -1,89 +1,111 @@
-# Overview
-
-Augmented reality is hot. Artificial intelligence is hot. Combining the two to create an augmented view of reality where pictures can be identified, tracked, and labeled with meaningful text is a truly fun and exciting experience. This page describes how to use [Unity](https://unity3d.com/unity/beta) and [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to create a desktop application to do just that. The application can be run as-is on the desktop emulator, and it can also be deployed onto the [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens).
-
-The application uses the [Microsoft Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/), part of Microsoft Cognitive Services, to extract meaningful text from images. [Vuforia](https://library.vuforia.com/articles/Training/Object-Recognition) is used for image detection and tracking. [Microsoft Visual Studio](https://www.visualstudio.com/) is used to create script actions that call out to the Computer Vision API and also to deploy the application to the HoloLens.
-
-The below steps describe how to create two demos. The first demo shows how to recognize and track an image, and draw a cube on top of it. The second demo builds upon the first demo by showing how to extract meaningful text about a recognized image from the Computer Vision API and superimpose it on top of your view.
-
-So, feel free to follow the steps below to get started  - and have fun!
-
 # Demo 3 - ImageLabels
 
-This demo shows how to recognize and track an image, and draw a cube on top of it. When running, it looks like this:
+This demo builds upon the previous demo by showing how to extract meaningful text about a recognized image from the Computer Vision API and superimpose it on top of your view.
 
-![demo](images/demo-2-running.png)
-
-For an architectural diagram showing how all the components work together, click [here](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/master/demo-1-architecture.md).
+![demo](setup/demo3-running-resized-66.png)
 
 ## Setup Instructions
 
 Follow these instructions to deploy the application when using the emulator:
 
-1. Install Visual Studio
-   - browse: https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio
-1. Get license key from Microsoft Computer Vision API
-   - browse: https://azure.microsoft.com/en-us/services/cognitive-services
-   - click: Try Cognitive Services for free > Get API key
-   - agree to terms of service and select region
-   - click: Next
-   - login
-   - make note of license key
-1. Update Vuforia image database
-   - browse: https://developer.vuforia.com
-   - login
-   - click: Develop > Target Manager > AugmentedRealityDemoDatabase
-   - click: Add Target
-   - select: Single Image
-   - file: browse: `<local-repo-dir>`\reality-augmentation-using-cognitive-services\setup\target-images\satya-nadella.jpg
-   - type: width:5
-   - type: name:satya-nadella
-   - click: Add
-1. Download updated Vuforia image database
-   - click: Download Database
-   - Select: Unity Editor
-   - click: Download
-   - click: Save As: `<local-repo-dir>`\reality-augmentation-using-cognitive-services
-   - click: Save
-1. Import updated Vuforia image database into Unity project
-   - from: Unity: project: AugmentedRealityDemo
-   - menu: Asset > Import Package > Custom Package...
-   - browse: `<local-repo-dir>`\reality-augmentation-using-cognitive-services\vuforia\target-image-database\AugmentedRealityDemoDatabase.unitypackage
-1. Create text on top of recognized images in Unity Project
-   - Create Image Targets for satya-nadella
-       - expand: Vuforia > Prefabs
-       - drag: under: AR Camera: ImageTarget
-       - rename: SatyaNadellaTarget
-       - click: SatyaNadellaTarget
-       - select: Database: AugmentedRealityDemoDatabase
-       - select: Image Target: satya-nadella
-   - Create 3D Text for: satya-nadella
-       - right click: SatyaNadellaTarget
-       - select: 3D Object > 3D Text
-       - rename: SatyaNadellaText
-       - clear: Text
-   - Create component and script for: satya-nadella
-       - click: SatyaNadellaText
-       - click: Add Component
-       - type: Name: SetTextSatyaNadella
-       - click: Create and Add
-       - double click: SetTextSatyaNadella
-       - copy: `<local-repo-dir>`\reality-augmentation-using-cognitive-services\setup\target-images\satya-nadella.jpg
-         into: `<local-repo-dir>`\reality-augmentation-using-cognitive-services\unity\AugmentedRealityDemo\Assets\StreamingAssets
-   - click: SatyaNadellaTarget > SatyaNadellaText
-       - type: Transform
-           - Position: x: -1, y: 0, z: 0
-           - Rotation: x: 90, y: 0, z: 0
-           - Scale: x: 0.1, y: 0.1, z: 0.1
-       - click: Add Component
-       - select: New Script
-       - type: SetTextSatyaNadella # this will open Visual Studio
-       - copy: contents: `<local-repo-dir>`\reality-augmentation-using-cognitive-services\setup\src\SetTextSatyaNadella.cs
-       - menu: file: exit
-   - menu: file: exit
-   - menu: File > Save Scene
-   - type: Scene1
-   - menu: File > Save Project
-   - click: run arrow
+1. Add image to Vuforia image database
 
-> If you have a HoloLens, you can proceed to deploy this project to a HoloLens by following the instructions [here](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/master/deploy-to-hololens.md).
+  - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
+  - Login
+  - Click **Target Manager**
+  - Under **Database** click **HoloWorld**
+
+   ![add target](setup/add-target-labelled-resized-66.png)
+
+  - Click **Add Target**
+  - For **Type** select **Single Image**
+  - For **File** click **Browse...**
+  - Select **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\images\satya-nadella.jpg**
+  - Click **Open**
+  - For **Width** type **5**
+  - For **Name** type **satya-nadella**
+  - Click **Add**
+
+1. Download updated Vuforia image database
+
+  ![click download database](setup/click-download-database-labelled-resized-66.png)
+
+  - Click **Download Database (All)**
+
+  ![download database](setup/download-database-labelled-resized-66.png)
+
+  - Select **Unity Editor**
+  - Click **Download**
+  - Click **Save As** > **`<working-dir>`\HoloWorld.unitypackage**
+  - Click **Save** (Note - go ahead and overwrite the existing one)
+
+1. Import updated Vuforia image database into Unity project
+  - Start **Unity**
+  - Click **Projects** > **HoloWorld**
+
+  ![import package](setup/import-package-labelled-resized-66.png)
+
+  - Menu **Assets** > **Import Package** > **Custom Package...**
+  - Browse: **`<working-dir>`\Hololens\HoloWorld.unitypackage**
+
+  ![import all](setup/import-all-labelled-resized-66.png)
+
+  - Click **Open** > **All** > **Import**
+
+1. Create image target
+
+  ![image target](setup/image-target-labelled-resized-66.png)
+
+  - Select **SampleScene**
+  - Click **Create** > **Vuforia** > **Image**
+
+  ![text properties](setup/image-target-properties-labelled-resized-66.png)
+
+  - For **ImageTarget** type **SatyaNadellaTarget**
+  - For **Database** select **HoloWorld**
+  - For **Image Target** select **satya-nadella**
+
+  ![create text](setup/create-text-labelled-resized-66.png)
+
+  - Right click **SatyaNadellaTarget**
+  - Select **3D Object** > **3D Text**
+
+  ![text properties](setup/text-properties-labelled-resized-66.png)
+
+  - For **New Text** type **SatyaNadellaText**
+  - For **position** > **x** type **-1**
+  - For **rotation** > **x** type **90**
+  - For **scale** > **x** type **0.1**
+  - For **scale** > **y** type **0.1**
+  - For **scale** > **z** type **0.1**
+
+  > Checkpoint: Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see the default text superimposed on top of it.
+
+1. Add scripts for calling Computer Vision API
+
+  - For **Text** remove the default text
+  - Create a **Scripts** folder in **`<working-dir>`\HoloWorld\assets\**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\SetTextSatyaNadella.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\VisionAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
+
+  ![add component](setup/add-component-labelled-resized-66.png)
+
+  - Click **Add Component** > **Scripts** > **Set Text Satya Nadella**
+  - For **Script** double click **SetTextSatyaNadella** (Note - this will open the script in Visual Studio)
+  - Replace **YOUR-SUBSCRIPTION-KEY** with your Computer Vision API subscription key
+  - Menu **File** > **Save All**
+
+  - From the Unity Editor
+  - Menu **File** > **Save Scenes**
+  - Menu **File** > **Save Project**
+
+1. Copy images to streaming directory
+
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\images\satya-nadella.jpg** to
+  to **`<working-dir>`\HoloWorld\Assets\StreamingAssets\**
+
+## Run the demo
+
+  ![play](setup/play-labelled-resized-66.png)
+
+  - Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see information about him superimposed on top of it.

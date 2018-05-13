@@ -89,20 +89,20 @@ For this demo, we will build upon what we did for the previous demo.
 
    ![create cube](setup/create-cube-labelled-resized-66.png)
 
-   - right click: **BusinessCardTarget**
-   - select: **3D Object** > **Cube**
+   - Right click **BusinessCardTarget**
+   - Select **3D Object** > **Cube**
 
    ![cube properties](setup/cube-properties-labelled-resized-66.png)
 
    - For **position** > **y** type **0.5**
-   - for **scale** > **x** type **0.25**
-   - for **scale** > **y** type **0.25**
+   - For **scale** > **x** type **0.25**
+   - For **scale** > **y** type **0.25**
    - For **scale** > **z** type **0.25**
-   - menu **File** > **Save Scenes**
-   - menu **File** > **Save Project**
+   - Menu **File** > **Save Scenes**
+   - Menu **File** > **Save Project**
 
 ## Run the demo
 
 ![play](setup/play-labelled-resized-66.png)
 
-- click **Run**. If you hold the business card in front of your computer's camera, you will see cube on top of it.
+- Click **Run**. If you hold the business card in front of your computer's camera, you will see cube on top of it.

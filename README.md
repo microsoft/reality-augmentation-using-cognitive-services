@@ -44,15 +44,15 @@ You also need to have available the following cloud services:
 
 # Demos
 
-1. [**01-HoloWorld**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/01-HoloWorld/01-HoloWorld.md)
-1. [**02-Cube**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/02-Cube/02-Cube.md)
-1. [**03-ImageLabels**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/03-ImageLabels/03-ImageLabels.md)
-1. [**04-Camera**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/04-Camera/04-Camera.md)
-1. [**05-OCR**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/05-OCR/05-OCR.md)
-1. [**06-Translate**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/06-Translate/06-Translate.md)
-1. [**07-Handwriting**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/07-Handwriting/07-Handwriting.md)
-1. [**08-FacialRecognition**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/08-FacialRecognition/08-FacialRecognition.md)
-1. [**09-CustomModel**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/09-CustomModel/09-CustomModel.md)
+- [**01-HoloWorld**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/01-HoloWorld/01-HoloWorld.md)
+- [**02-Cube**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/02-Cube/02-Cube.md)
+- [**03-ImageLabels**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/03-ImageLabels/03-ImageLabels.md)
+- [**04-Camera**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/04-Camera/04-Camera.md)
+- [**05-OCR**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/05-OCR/05-OCR.md)
+- [**06-Translate**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/06-Translate/06-Translate.md)
+- [**07-Handwriting**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/07-Handwriting/07-Handwriting.md)
+- [**08-FacialRecognition**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/08-FacialRecognition/08-FacialRecognition.md)
+- [**09-CustomModel**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/09-CustomModel/09-CustomModel.md)
 
 # Contributing
 

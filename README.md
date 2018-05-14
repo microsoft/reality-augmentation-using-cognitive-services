@@ -5,6 +5,7 @@ Augmented reality is hot. Artificial intelligence is hot. Combining the two to c
 The application uses the [Microsoft Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/), part of Microsoft Cognitive Services, to extract meaningful text from images. [Vuforia](https://library.vuforia.com/articles/Training/Object-Recognition) is used for image detection and tracking. [Microsoft Visual Studio](https://www.visualstudio.com/) is used to create script actions that call out to the Computer Vision API and also to deploy the application to the HoloLens.
 
 # Prerequisites
+
 This tutorial requires that you have a 64-bit Windows computer with a camera. The following software needs to be installed on your computer:
 
 1. Visual Studio 2017
@@ -27,15 +28,54 @@ This tutorial requires that you have a 64-bit Windows computer with a camera. Th
    - Save the installer executable to your `Downloads` folder and double click it
    - Click **Next**, accept the terms of service, click **Next**, click **Next**, select the download folder, click **Next**, and click **Finish**
 
-You also need to have available the following cloud services:
+You also need to have available some cloud services.
 
-1. Microsoft Computer Vision API
-   - Navigate to [Microsoft Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services)
-   - Click **Try Cognitive Services for free** > **Get API key**
-   - Agree to terms of service and select region
-   - Click **Next**
-   - Login
-   - Copy at least one license key to a text file
+1. Microsoft Azure Resource Group
+   - Navigate to [Azure Portal](https://ms.portal.azure.com)
+     - Sign in to the Azure Cloud if requested
+   - Click **Resource groups**
+   - In the blade that opens on the right, click **+ Add**
+   - In the blade on the right, fill in the following fields:
+	 - Resource group name: *myCognitiveResources*
+	 - Subscription: select your subscription
+	 - Resource group location: select **West US 2**
+   - Click **Create**
+
+1. Microsoft Computer Vision API **Wait until the tutorial to do this***
+   - Navigate to [Azure Portal](https://ms.portal.azure.com)
+     - Sign in to the Azure Cloud if requested
+   - Click **Create a resource**
+   - Type **Computer Vision** in the search box
+   - Click the item named **Computer Vision**
+   - Click **Create**
+   - In the dialog, fill in the following fields:
+	 - Name: Type in *myComputerVision*
+	 - Subscription: select your subscription
+	 - Pricing tier: select **F0** for free
+	 - Resource group:
+	   - Select **Use existing**
+	   - From the drop-down text box, select *myCognitiveServices*
+   - Wait for the **Quick start** page
+   - In the right of the page, click **Keys**
+   - Copy **KEY 1** to a text file
+
+1. Microsoft Text Analytics API **Wait until the tutorial to do this***
+   - Navigate to [Azure Portal](https://ms.portal.azure.com)
+     - Sign in to the Azure Cloud if requested
+   - Click **Create a resource**
+   - Type **Translator Text** in the search box
+   - Click the item named **Translator Text**
+   - Click **Create**
+   - In the dialog, fill in the following fields:
+	 - Name: Type in *myTranslatorText*
+	 - Subscription: select your subscription
+	 - Pricing tier: select **F0** for free
+	 - Resource group:
+	   - Select **Use existing**
+	   - From the drop-down text box, select *myCognitiveServices*
+   - Wait for the **Quick start** page
+   - In the right of the page, click **Keys**
+   - Copy **KEY 1** to a text file
 
 1. Vuforia
    - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)

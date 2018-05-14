@@ -41,7 +41,7 @@ You also need to have available some cloud services.
 	 - Resource group location: select **West US 2**
    - Click **Create**
 
-1. Microsoft Computer Vision API **Wait until the tutorial to do this***
+1. Microsoft Computer Vision API **(Wait until the tutorial to do this)**
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
    - Click **Create a resource**
@@ -59,7 +59,7 @@ You also need to have available some cloud services.
    - In the right of the page, click **Keys**
    - Copy **KEY 1** to a text file
 
-1. Microsoft Text Analytics API **Wait until the tutorial to do this***
+1. Microsoft Text Analytics API **(Wait until the tutorial to do this)**
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
    - Click **Create a resource**

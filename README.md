@@ -28,7 +28,7 @@ This tutorial requires that you have a 64-bit Windows computer with a camera and
    - Save the installer executable to your `Downloads` folder and double click it
    - Click **Next**, accept the terms of service, click **Next**, click **Next**, select the download folder, click **Next**, and click **Finish**
 
-You also need to have available some cloud services.
+You will also need to some cloud services.
 
 1. Microsoft Azure Resource Group
    - Navigate to [Azure Portal](https://ms.portal.azure.com)

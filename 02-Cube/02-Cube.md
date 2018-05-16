@@ -15,6 +15,7 @@ For this demo, we will build upon what we did for the previous demo.
    - If you haven't already, create a local working directory which we'll refer to as `<working-dir>` (Example: **c:\hololens**)
    - Click **Clone or download** > **Download ZIP**
    - Save and extract the zip into `<working-dir>`
+
 1. Create Vuforia license key
    - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
    - Login
@@ -24,8 +25,9 @@ For this demo, we will build upon what we did for the previous demo.
    - Click **Confirm**
    - Under **Name** click **HoloWorld**
    - Make a note of this license key, which we'll refer to as `<vuforia-license-key>` You will need in later in your Unity project.
+
 1. Create Vuforia image database
-   - Click **Target Manager** > **Add Database**
+   - In the **Vuforia Developer Portal**, click **Target Manager** > **Add Database**
    - For **Name** type **HoloWorld**
    - Select **Device**
    - Click **Create**
@@ -41,6 +43,7 @@ For this demo, we will build upon what we did for the previous demo.
    - For **Width** type **5**
    - For **Name** type **businesscard**
    - Click **Add**
+
 1. Download Vuforia image database
 
    ![click download database](setup/click-download-database-labelled-resized-66.png)
@@ -70,11 +73,13 @@ For this demo, we will build upon what we did for the previous demo.
 
    ![vuforia configuration](setup/vuforia-configuration-labelled-resized-66.png)
 
-   - Click **AR Camera** > **Open Vuforia configuration**
+   - Click **AR Camera**
+   - In the **Inspector** window, click **Open Vuforia configuration**
 
    ![license key](setup/license-key-labelled-resized-66.png)
 
    - For **App License Key** paste your **`<vuforia-license-key>`**
+   - Click **Add License**
 
    ![image target](setup/image-target-labelled-resized-66.png)
 
@@ -83,18 +88,18 @@ For this demo, we will build upon what we did for the previous demo.
 
    ![target properties](setup/target-properties-labelled-resized-66.png)
 
-   - For **ImageTarget** type **BusinessCardTarget**
+   - In the **Inspector** window, for **ImageTarget** type *BusinessCardTarget*
    - For **Database** select **HoloWorld**
    - For **Image Target** select **businesscard**
 
    ![create cube](setup/create-cube-labelled-resized-66.png)
 
-   - Right click **BusinessCardTarget**
+   - In the **SampleScene**, right click **BusinessCardTarget**
    - Select **3D Object** > **Cube**
 
    ![cube properties](setup/cube-properties-labelled-resized-66.png)
 
-   - For **position** > **y** type **0.5**
+   - In the **Inspector** window, for **position** > **y** type **0.5**
    - For **scale** > **x** type **0.25**
    - For **scale** > **y** type **0.25**
    - For **scale** > **z** type **0.25**
@@ -106,3 +111,4 @@ For this demo, we will build upon what we did for the previous demo.
 ![play](setup/play-labelled-resized-66.png)
 
 - Click **Run**. If you hold the business card in front of your computer's camera, you will see cube on top of it.
+- Note: If you do not have the business card, you can use an image you uploaded to a smartphone

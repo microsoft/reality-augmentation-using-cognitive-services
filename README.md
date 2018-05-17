@@ -84,7 +84,7 @@ You will also need to some cloud services.
 
 # Demos
 
-- [**01-HoloWorld**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/01-HoloWorld/01-HoloWorld.md)
+- [**01-HoloWorld**](01-HoloWorld/README.md)
 - [**02-Cube**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/02-Cube/02-Cube.md)
 - [**03-ImageLabels**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/03-ImageLabels/03-ImageLabels.md)
 - [**04-Camera**](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/mlads/04-Camera/04-Camera.md)

@@ -2,7 +2,7 @@
 
 This demo shows how to overlay text in the augmented reality camera running in the Unity Emulator.
 
-![thumbs up](setup/thumbs-up-resized-66.png)
+![thumbs up](setup/demo1-running-resized-66.png)
 
 ## Setup Instructions
 

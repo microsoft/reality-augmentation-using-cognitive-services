@@ -2,7 +2,7 @@
 
 This demo shows how to recognize and track an image, and draw a cube on top of it. When running, it looks like this:
 
-![running](setup/demo2-running.png)
+![running](setup/demo2-running-resized-66.png)
 
 ## Setup Instructions
 

@@ -87,11 +87,13 @@ Follow these instructions to deploy the application when using the emulator:
   - Create a **Scripts** folder in **`<working-dir>`\HoloWorld\assets\**
   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\SetTextSatyaNadella.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\VisionAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\VisionAPIUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
 
   ![add component](setup/add-component-labelled-resized-66.png)
 
   - Click **Add Component** > **Scripts** > **Set Text Satya Nadella**
   - For **Script** double click **SetTextSatyaNadella** (Note - this will open the script in Visual Studio)
+  - Right click **VisionAPIUtils** in the code and select **Go To Definition**
   - Replace **YOUR-SUBSCRIPTION-KEY** with your Computer Vision API subscription key
   - Menu **File** > **Save All**
 

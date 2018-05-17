@@ -15,7 +15,7 @@ Follow these instructions to deploy the application when using the emulator:
 - Click **SampleScene** > **Create** > **UI** > **Image**
 - Type **imgSnapshot**
 - For **Pos X** type **-580**
-- For **Pos Y** type **100**
+- For **Pos Y** type **150**
 - For **Width** type **300**
 - For **Height** type **200**
 - Click **SampleScene** > **Create** > **UI** > **Button**
@@ -30,13 +30,13 @@ Follow these instructions to deploy the application when using the emulator:
 - Click **SampleScene** > **Create** > **UI** > **Panel**
 - Type **pnlImageInfo**
 - For **Left** type **30**
-- For **Top** type **370**
+- For **Top** type **330**
 - For **Right** type **1190**
-- For **Bottom** type **100**
+- For **Bottom** type **130**
 - Click **SampleScene** > **Create** > **UI** > **Text**
 - Type **txtImageInfo**
 - For **Pos X** type **-630**
-- For **Pos Y** type **-150**
+- For **Pos Y** type **-120**
 - For **Width** type **160**
 - For **Height** type **200**
 - For **Text** remove the default text **Next Text**
@@ -46,7 +46,6 @@ Follow these instructions to deploy the application when using the emulator:
 1. Add scripts
 - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\ButtonHandler.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
 - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\CameraUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
-- Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\IdentificationUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
 - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\SetImageLabels.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
 
 1. Hook up scripts

@@ -2,7 +2,7 @@
 
 This demo builds upon the previous demo by showing how to take pictures on your device's camera, send it to the Computer Vision API, and overlay information about it on top of it in your view. When running, it looks like this:
 
-![demo-one](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/master/setup/images/demo-1-running.png)
+![demo-four](setup/demo4-running-resized-66.png)
 
 ## Setup Instructions
 

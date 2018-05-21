@@ -1,6 +1,6 @@
 # Demo Four - Camera
 
-This demo builds upon the previous demo by showing how to take pictures on your device's camera, send it to the Computer Vision API, and overlay information about it on top of it in your view. When running, it looks like this:
+This demo builds upon the previous demo by showing how to take pictures on your device's camera, send it to the Computer Vision API, and overlay information about it on top of it in your view. When running, here's an example of what it might look like:
 
 ![demo-four](setup/demo4-running-resized-66.png)
 
@@ -99,4 +99,4 @@ Follow these instructions to deploy the application when using the emulator:
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see information about him superimposed on top of it.
+  - Click **Run**. Click the **Identify** button and it will use the device camera to take a picture, send it to the Computer Vision API, and overlay information about it on top of it in your view.

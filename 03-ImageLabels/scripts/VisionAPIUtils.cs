@@ -35,10 +35,7 @@ public class VisionAPIUtils
         {
             string json = www.text;
             VisionAPIResults results = JsonUtility.FromJson<VisionAPIResults>(json);
-            string text = results.description.captions[0].text;
-            string confidence = results.description.captions[0].confidence.ToString("0.00");
-            string labelText = text + " (" + confidence + ")";
-            setText(labelText, textComponent, type);
+            setText(results.ToString(), textComponent, type);
         }
     }
 

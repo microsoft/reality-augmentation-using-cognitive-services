@@ -74,6 +74,7 @@ Follow these instructions to deploy the application when using the emulator:
    - For **Width** type **160**
    - For **Height** type **200**
    - For **Text** remove the default text **Next Text**
+   - For **Font Size** set to **20**
 
   > Checkpoint: Click **Run**. For now you will see the layout of the new UI components. The won't do anything yet, but that's in the next section, where we will configure scripts so that when you click the **Identify** button your device's camera takes a picture, sends the image to the Computer Vision API, and the results are displayed.
 

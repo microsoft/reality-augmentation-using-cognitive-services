@@ -55,4 +55,4 @@ Follow these instructions to deploy the application when using the emulator:
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you position someone in front of your devices's camera and click the **Identify** button, you will see facial characteristics of that persion including age, gender, and emotion.
+  - Click **Run**. If you position someone in front of your devices's camera and click the **Identify** button, you will see facial characteristics of that person including age, gender, and emotion.

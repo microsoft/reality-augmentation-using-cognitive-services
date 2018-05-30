@@ -106,7 +106,7 @@ Follow these instructions to deploy the application when using the emulator:
 1. Copy images to streaming directory
 
   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\images\satya-nadella.jpg** to
-  to **`<working-dir>`\HoloWorld\Assets\StreamingAssets\**
+  to **`<working-dir>`\HoloWorld\Assets\StreamingAssets**
 
 ## Run the demo
 

@@ -84,10 +84,12 @@ Follow these instructions to deploy the application when using the emulator:
 1. Add scripts for calling Computer Vision API
 
   - For **Text** remove the default text
-  - Create a **Scripts** folder in **`<working-dir>`\HoloWorld\assets\**
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\SetTextSatyaNadella.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\VisionAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\VisionAPIUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
+  - Create a **Scripts** folder in **`<working-dir>`\HoloWorld\assets**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\ImageUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\SetTextSatyaNadella.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\TextUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\VisionAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\VisionAPIUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
 
   ![add component](setup/add-component-labelled-resized-66.png)
 

@@ -1,20 +1,8 @@
-# Overview
-
-Augmented reality is hot. Artificial intelligence is hot. Combining the two to create an augmented view of reality where pictures can be identified, tracked, and labeled with meaningful text is a truly fun and exciting experience. This page describes how to use [Unity](https://unity3d.com/unity/beta) and [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to create a desktop application to do just that. The application can be run as-is on the desktop emulator, and it can also be deployed onto the [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens).
-
-The application uses the [Microsoft Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/), part of Microsoft Cognitive Services, to extract meaningful text from images. [Vuforia](https://library.vuforia.com/articles/Training/Object-Recognition) is used for image detection and tracking. [Microsoft Visual Studio](https://www.visualstudio.com/) is used to create script actions that call out to the Computer Vision API and also to deploy the application to the HoloLens.
-
-The below steps describe how to create two demos. The first demo shows how to recognize and track an image, and draw a cube on top of it. The second demo builds upon the first demo by showing how to extract meaningful text about a recognized image from the Computer Vision API and superimpose it on top of your view.
-
-So, feel free to follow the steps below to get started  - and have fun!
-
 # Demo Five - OCR
 
-This demo shows how to recognize and track an image, and draw a cube on top of it. When running, it looks like this:
+This demo builds upon the previous demo by showing how to call the Computer Vision API to recognize text in images using Optical Character Recognition (OCR). When running, it looks like this:
 
-![demo-one](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/master/setup/images/demo-1-running.png)
-
-For an architectural diagram showing how all the components work together, click [here](https://github.com/Microsoft/reality-augmentation-using-cognitive-services/blob/master/demo-1-architecture.md).
+![demo-five](setup/demo4-running-resized-66.png)
 
 ## Setup Instructions
 
@@ -29,7 +17,7 @@ Follow these instructions to deploy the application when using the emulator:
    - browse **https://unity3d.com/get-unity/download**
    - scroll down and click **Older versions of Unity**
    - scroll down and click **Downloads (Win)** for **2017.4.1** (the most recent as of this writing)
-   - select **Unity Editor (64 bit)** 
+   - select **Unity Editor (64 bit)**
    - either click **Run** or save the installer executable locally and double click it
    - click **Next**, accept the terms of service, click **Next**, select the download folder, and click **Next**
    - check **Run Unity** and click **Finish**

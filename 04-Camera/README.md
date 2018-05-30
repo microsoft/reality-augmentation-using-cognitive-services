@@ -79,9 +79,9 @@ Follow these instructions to deploy the application when using the emulator:
   > Checkpoint: Click **Run**. For now you will see the layout of the new UI components. The won't do anything yet, but that's in the next section, where we will configure scripts so that when you click the **Identify** button your device's camera takes a picture, sends the image to the Computer Vision API, and the results are displayed.
 
 1. Add scripts
-   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\ButtonHandler.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
-   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\CameraUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
-   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\SetImageLabels.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\04-Camera\scripts\ButtonHandler.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\04-Camera\scripts\CameraUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\04-Camera\scripts\SetImageLabels.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
 
 1. Hook up scripts
 

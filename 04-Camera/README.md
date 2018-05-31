@@ -41,7 +41,7 @@ Follow these instructions to deploy the application when using the emulator:
 - For **Height** type **200**
 - For **Text** remove the default text **Next Text**
 
-  > Checkpoint: Click **Run**. For now you will the new UI components. The don't do anything yet, but next we will configure scripts so that when you click the **Identify** button your device's camera takes a picture, sends the image to the Computer Vision API, and the results are displayed.
+  > Checkpoint: Click **Run**. For now you will the new UI components. The don't do anything yet, but next we will configure scripts so that when you click the **Identify** button your device's camera takes a picture, sends the image to the Computer Vision API, and the results are displayed. *Note:* you may need to click **Maximize On Play** to see the components.
 
 1. Add scripts
 - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\scripts\ButtonHandler.cs** to **`<working-dir>`\HoloWorld\assets\Scripts\**
@@ -60,4 +60,4 @@ Follow these instructions to deploy the application when using the emulator:
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see information about him superimposed on top of it.
+  - Click **Run**. If you hold your cellphone in front of your computer's camera and the click the *Identify* button, the screen will blank for a moment, and then you will see a photo in the image panel, and information about its contents in the text panel.

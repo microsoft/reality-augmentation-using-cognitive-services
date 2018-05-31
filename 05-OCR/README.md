@@ -21,7 +21,7 @@ Follow these instructions to deploy the application when using the emulator:
    ```
    const string VISION_API_OCR_URL = "https://eastus.api.cognitive.microsoft.com/vision/v2.0/ocr";
    ```
-   and by adding a new function called **MakeOCRRequest** at the bottom:
+   and by adding a new function called **MakeOCRRequest** at the bottom of the **VisionAPIUtils** class:
    ```
    public static IEnumerator MakeOCRRequest(byte[] bytes, string textComponent, Type type)
    {
@@ -46,6 +46,11 @@ Follow these instructions to deploy the application when using the emulator:
        }
    }
    ```
+   - Menu **File** > **Save All**
+
+   - From the Unity Editor
+   - Menu **File** > **Save Scenes**
+   - Menu **File** > **Save Project**
 
 ## Run the demo
 

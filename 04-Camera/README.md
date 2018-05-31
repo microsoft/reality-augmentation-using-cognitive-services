@@ -94,10 +94,14 @@ Follow these instructions to deploy the application when using the emulator:
 
    - Click **txtImageInfo**
    - Click **Add Component** > **Scripts** > **Set Image Label**
+   - Menu **File** > **Save Scenes**
+   - Menu **File** > **Save Project**
+
+   - From Visual Studio
    - Menu **File** > **Save All**
 
 ## Run the demo
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you hold your cellphone in front of your computer's camera and the click the **Identify** button and it will use the device camera to take a picture, send it to the Computer Vision API, and overlay information about it on top of it in your view.
+  - Click **Run**. If you hold your cellphone in front of your computer's camera and click the **Identify** button, it will use the device camera to take a picture, send it to the Computer Vision API, and overlay information about it on top of it in your view.

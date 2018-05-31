@@ -92,7 +92,6 @@ You will also need to some cloud services.
 - [**06-Translate**](06-Translate/README.md)
 - [**07-Handwriting**](07-Handwriting/README.md)
 - [**08-FacialRecognition**](08-FacialRecognition/README.md)
-- [**09-CustomModel**](09-CustomModel/README.md)
 
 # Contributing
 

@@ -76,7 +76,7 @@ Follow these instructions to deploy the application when using the emulator:
    - For **Text** remove the default text **Next Text**
    - For **Font Size** set to **20**
 
-  > Checkpoint: Click **Run**. For now you will see the layout of the new UI components. The won't do anything yet, but that's in the next section, where we will configure scripts so that when you click the **Identify** button your device's camera takes a picture, sends the image to the Computer Vision API, and the results are displayed.
+  > Checkpoint: Click **Run**. For now you will see the layout of the new UI components. The won't do anything yet, but that's in the next section, where we will configure scripts so that when you click the **Identify** button your device's camera takes a picture, sends the image to the Computer Vision API, and the results are displayed. *Note:* you may need to click **Maximize On Play** to see the components.
 
 1. Add scripts
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\04-Camera\scripts\ButtonHandler.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
@@ -100,4 +100,4 @@ Follow these instructions to deploy the application when using the emulator:
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. Click the **Identify** button and it will use the device camera to take a picture, send it to the Computer Vision API, and overlay information about it on top of it in your view.
+  - Click **Run**. If you hold your cellphone in front of your computer's camera and the click the **Identify** button and it will use the device camera to take a picture, send it to the Computer Vision API, and overlay information about it on top of it in your view.

@@ -24,7 +24,7 @@ Follow these instructions to deploy the application when using the emulator:
    ```
    -Replace **YOUR-SUBSCRIPTION-KEY** with your Translation API subscription key.
 
-   -Add a new function called **MakeTranslationRequest** at the bottom:
+   -Add a new function called **MakeTranslationRequest** at the bottom of the VisionAPIUtils class:
    ```
    public static IEnumerator MakeTranslationRequest(byte[] bytes, string textComponent, Type type)
    {
@@ -69,6 +69,11 @@ Follow these instructions to deploy the application when using the emulator:
        }
    }
    ```
+   - Menu **File** > **Save All**
+
+   - From the Unity Editor
+   - Menu **File** > **Save Scenes**
+   - Menu **File** > **Save Project**
 
 ## Run the demo
 

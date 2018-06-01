@@ -1,8 +1,8 @@
-# Demo Seven - Handwriting
+# Demo Six - Handwriting
 
 This demo builds upon the previous demo by showing how to call the Vision API on a text image and recognize handwriting. When running, it looks like this:
 
-![demo-seven](setup/demo7-running-resized-66.png)
+![demo-six](setup/demo6-running-resized-66.png)
 
 ## Setup Instructions
 

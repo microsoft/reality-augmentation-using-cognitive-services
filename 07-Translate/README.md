@@ -1,8 +1,8 @@
-# Demo Six - Translate
+# Demo Seven - Translate
 
 This demo builds upon the previous demo by showing how to call the Translation API on text recognized in an image using Optical Character Recognition (OCR). When running, it looks like this:
 
-![demo-six](setup/demo6-running-resized-66.png)
+![demo-seven](setup/demo7-running-resized-66.png)
 
 ## Setup Instructions
 

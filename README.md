@@ -107,8 +107,8 @@ You will also need to some cloud services.
 - [**03-ImageLabels**](03-ImageLabels/README.md)
 - [**04-Camera**](04-Camera/README.md)
 - [**05-OCR**](05-OCR/README.md)
-- [**06-Translate**](06-Translate/README.md)
-- [**07-Handwriting**](07-Handwriting/README.md)
+- [**06-Handwriting**](06-Handwriting/README.md)
+- [**07-Translate**](07-Translate/README.md)
 - [**08-FacialRecognition**](08-FacialRecognition/README.md)
 
 # Contributing

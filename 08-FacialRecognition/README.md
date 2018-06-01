@@ -25,7 +25,7 @@ Follow these instructions to deploy the application when using the emulator:
    -Replace **YOUR-SUBSCRIPTION-KEY** with your Faces API subscription key.
    -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding this at the top:
 
-   -Add a new function called **MakeFaceRequest** at the bottom:
+   -Add a new function called **MakeFaceRequest** at the bottom of the VisionAPIUtils class:
    ```
     public static IEnumerator MakeFaceRequest(byte[] bytes, string textComponent, Type type)
     {
@@ -50,6 +50,11 @@ Follow these instructions to deploy the application when using the emulator:
         }
     }
    ```
+   - Menu **File** > **Save All**
+
+   - From the Unity Editor
+   - Menu **File** > **Save Scenes**
+   - Menu **File** > **Save Project**
 
 ## Run the demo
 

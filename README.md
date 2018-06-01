@@ -77,6 +77,24 @@ You will also need to some cloud services.
    - In the right of the page, click **Keys**
    - Copy **KEY 1** to a text file
 
+1. Microsoft Face API **(Wait until the tutorial to do this)**
+   - Navigate to [Azure Portal](https://ms.portal.azure.com)
+     - Sign in to the Azure Cloud if requested
+   - Click **Create a resource**
+   - Type **Face** in the search box
+   - Click the item named **Face**
+   - Click **Create**
+   - In the dialog, fill in the following fields:
+	 - Name: Type in *myFace*
+	 - Subscription: select your subscription
+	 - Pricing tier: select **F0** for free
+	 - Resource group:
+	   - Select **Use existing**
+	   - From the drop-down text box, select *myCognitiveServices*
+   - Wait for the **Quick start** page
+   - In the right of the page, click **Keys**
+   - Copy **KEY 1** to a text file
+
 1. Vuforia
    - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
    - Click **Register**

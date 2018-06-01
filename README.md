@@ -30,6 +30,11 @@ This tutorial requires that you have a 64-bit Windows computer with a camera and
 
 You will also need to some cloud services.
 
+1. Vuforia
+   - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
+   - Click **Register**
+   - Enter information to create a development account
+
 1. Microsoft Azure Resource Group
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
@@ -94,11 +99,6 @@ You will also need to some cloud services.
    - Wait for the **Quick start** page
    - In the right of the page, click **Keys**
    - Copy **KEY 1** to a text file
-
-1. Vuforia
-   - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
-   - Click **Register**
-   - Enter information to create a development account
 
 # Demos
 

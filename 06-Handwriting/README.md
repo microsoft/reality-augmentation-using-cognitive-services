@@ -32,33 +32,35 @@ Follow these instructions to deploy the application when using the emulator:
         };
         string requestParameters = "mode=Handwritten";
         string uri = VISION_API_RECOGNIZETEXT_URL + "?" + requestParameters;
-        WWW www = new WWW(uri, bytes, headers);
-        yield return www;
+		if ( (bytes != null) && (bytes.Length > 0) ) {
+			WWW www = new WWW(uri, bytes, headers);
+			yield return www;
 
-        if (www.error != null)
-        {
-            TextUtils.setText(www.error, textComponent, type);
-        }
-        else
-        {
-            string operationLocation = www.responseHeaders["Operation-Location"];
-            var headers2 = new Dictionary<string, string>() {
-                    {"Ocp-Apim-Subscription-Key", VISION_API_SUBSCRIPTION_KEY }
-                };
-            System.Threading.Thread.Sleep(1000);
-            WWW www2 = new WWW(operationLocation, null, headers2);
-            yield return www2;
+			if (www.error != null)
+			{
+				TextUtils.setText(www.error, textComponent, type);
+			}
+			else
+			{
+				string operationLocation = www.responseHeaders["Operation-Location"];
+				var headers2 = new Dictionary<string, string>() {
+						{"Ocp-Apim-Subscription-Key", VISION_API_SUBSCRIPTION_KEY }
+					};
+				System.Threading.Thread.Sleep(1000);
+				WWW www2 = new WWW(operationLocation, null, headers2);
+				yield return www2;
 
-            if (www2.error != null)
-            {
-                TextUtils.setText(www.error, textComponent, type);
-            }
-            else
-            {
-                HandwritingAPIResults results = JsonUtility.FromJson<HandwritingAPIResults>(www2.text);
-                TextUtils.setText(results.ToString(), textComponent, type);
-            }
-        }
+				if (www2.error != null)
+				{
+					TextUtils.setText(www.error, textComponent, type);
+				}
+				else
+				{
+					HandwritingAPIResults results = JsonUtility.FromJson<HandwritingAPIResults>(www2.text);
+					TextUtils.setText(results.ToString(), textComponent, type);
+				}
+			}
+		}
     }
    ```
    - Menu **File** > **Save All**

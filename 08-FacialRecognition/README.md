@@ -35,19 +35,21 @@ Follow these instructions to deploy the application when using the emulator:
         };
         string requestParameters = "returnFaceAttributes=age,gender,emotion";
         string uri = FACES_API_URL + "?" + requestParameters;
-        WWW www = new WWW(uri, bytes, headers);
-        yield return www;
+		if ( (bytes != null) && (bytes.Length > 0) ) {
+			WWW www = new WWW(uri, bytes, headers);
+			yield return www;
 
-        if (www.error != null)
-        {
-            TextUtils.setText(www.error, textComponent, type);
-        }
-        else
-        {
-            string json = www.text.TrimStart('[').TrimEnd(']');
-            FacesAPIResults results = JsonUtility.FromJson<FacesAPIResults>(json);
-            TextUtils.setText(results.ToString(), textComponent, type);
-        }
+			if (www.error != null)
+			{
+				TextUtils.setText(www.error, textComponent, type);
+			}
+			else
+			{
+				string json = www.text.TrimStart('[').TrimEnd(']');
+				FacesAPIResults results = JsonUtility.FromJson<FacesAPIResults>(json);
+				TextUtils.setText(results.ToString(), textComponent, type);
+			}
+		}
     }
    ```
    - Menu **File** > **Save All**

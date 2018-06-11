@@ -87,7 +87,7 @@ Follow these instructions to deploy and run the application in the emulator:
 
    ![create text](setup/create-text-labelled-resized-66.png)
 
-   - in the ***Hierarchy** window on the left, click **Create** > **UI** > **Text**
+   - in the **Hierarchy** window on the left, click **Create** > **UI** > **Text**
 
    ![text properties](setup/text-properties-labelled-resized-66.png)
 

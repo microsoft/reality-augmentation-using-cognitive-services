@@ -22,17 +22,19 @@ public class VisionAPIUtils
         };
         string requestParameters = "visualFeatures=Description&language=en";
         string uri = VISION_API_ANALYZE_URL + "?" + requestParameters;
-        WWW www = new WWW(uri, bytes, headers);
-        yield return www;
+		if ( (bytes != null) && (bytes.Length > 0) ) {
+			WWW www = new WWW(uri, bytes, headers);
+			yield return www;
 
-        if (www.error != null)
-        {
-            TextUtils.setText(www.error, textComponent, type);
-        }
-        else
-        {
-            VisionAPIResults results = JsonUtility.FromJson<VisionAPIResults>(www.text);
-            TextUtils.setText(results.ToString(), textComponent, type);
-        }
+			if (www.error != null)
+			{
+				TextUtils.setText(www.error, textComponent, type);
+			}
+			else
+			{
+				VisionAPIResults results = JsonUtility.FromJson<VisionAPIResults>(www.text);
+				TextUtils.setText(results.ToString(), textComponent, type);
+			}
+		}
     }
 }

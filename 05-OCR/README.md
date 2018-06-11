@@ -32,18 +32,20 @@ Follow these instructions to deploy the application when using the emulator:
        };
        string requestParameters = "visualFeatures=Description&language=en";
        string uri = VISION_API_OCR_URL + "?" + requestParameters;
-       WWW www = new WWW(uri, bytes, headers);
-       yield return www;
+	   if ( (bytes != null) && (bytes.Length > 0) ) {
+		   WWW www = new WWW(uri, bytes, headers);
+		   yield return www;
 
-       if (www.error != null)
-       {
-           TextUtils.setText(www.error, textComponent, type);
-       }
-       else
-       {
-           OCRAPIResults results = JsonUtility.FromJson<OCRAPIResults>(www.text);
-           TextUtils.setText(results.ToString(), textComponent, type);
-       }
+		   if (www.error != null)
+		   {
+			   TextUtils.setText(www.error, textComponent, type);
+		   }
+		   else
+		   {
+			   OCRAPIResults results = JsonUtility.FromJson<OCRAPIResults>(www.text);
+			   TextUtils.setText(results.ToString(), textComponent, type);
+		   }
+	   }
    }
    ```
    - Menu **File** > **Save All**

@@ -1,4 +1,4 @@
-# Demo 1 - Holo World
+# Demo One - Holo World
 
 This demo shows how to overlay text in the augmented reality camera running in the Unity Emulator.
 

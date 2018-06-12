@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class VisionAPIUtils
 {
-    const string VISION_API_SUBSCRIPTION_KEY = "YOUR-SUBSCRIPTION-KEY";
-    const string VISION_API_ANALYZE_URL = "https://eastus.api.cognitive.microsoft.com/vision/v1.0/analyze";
+    const string VISION_API_SUBSCRIPTION_KEY = "YOUR_SUBSCRIPTION_KEY";
+    const string VISION_API_BASE_URL = "YOUR_BASE_URL";
 
     public static IEnumerator MakeAnalysisRequest(string imageFilePath, string textComponent, Type type)
     {
@@ -21,7 +21,7 @@ public class VisionAPIUtils
             {"Content-Type","application/octet-stream"}
         };
         string requestParameters = "visualFeatures=Description&language=en";
-        string uri = VISION_API_ANALYZE_URL + "?" + requestParameters;
+        string uri = VISION_API_BASE_URL + "/analyze?" + requestParameters;
 		if ( (bytes != null) && (bytes.Length > 0) ) {
 			WWW www = new WWW(uri, bytes, headers);
 			yield return www;

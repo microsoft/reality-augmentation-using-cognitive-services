@@ -12,16 +12,7 @@ Follow these instructions to deploy the application when using the emulator:
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\05-OCR\scripts\OCRAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
 
 1. Edit scripts
-   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeAnalysisRequest** and adding a new line below it that calls **MakeOCRRequest** as follows:
-   ```
-   //StartCoroutine(VisionAPIUtils.MakeAnalysisRequest(bytes, "txtImageInfo", typeof(Text)));
-   StartCoroutine(VisionAPIUtils.MakeOCRRequest(bytes, "txtImageInfo", typeof(Text)));
-   ```
-   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding this const at the top:
-   ```
-   const string VISION_API_OCR_URL = "https://eastus.api.cognitive.microsoft.com/vision/v2.0/ocr";
-   ```
-   and by adding a new function called **MakeOCRRequest** at the bottom of the **VisionAPIUtils** class:
+   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeOCRRequest** at the bottom of the **VisionAPIUtils** class:
    ```
    public static IEnumerator MakeOCRRequest(byte[] bytes, string textComponent, Type type)
    {
@@ -31,7 +22,7 @@ Follow these instructions to deploy the application when using the emulator:
            {"Content-Type","application/octet-stream"}
        };
        string requestParameters = "visualFeatures=Description&language=en";
-       string uri = VISION_API_OCR_URL + "?" + requestParameters;
+       string uri = VISION_API_BASE_URL + "/ocr?" + requestParameters;
 	   if ( (bytes != null) && (bytes.Length > 0) ) {
 		   WWW www = new WWW(uri, bytes, headers);
 		   yield return www;
@@ -47,6 +38,11 @@ Follow these instructions to deploy the application when using the emulator:
 		   }
 	   }
    }
+   ```
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeAnalysisRequest** and adding a new line below it that calls **MakeOCRRequest** as follows:
+   ```
+   //StartCoroutine(VisionAPIUtils.MakeAnalysisRequest(bytes, "txtImageInfo", typeof(Text)));
+   StartCoroutine(VisionAPIUtils.MakeOCRRequest(bytes, "txtImageInfo", typeof(Text)));
    ```
    - Menu **File** > **Save All**
 

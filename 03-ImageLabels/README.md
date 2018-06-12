@@ -1,4 +1,4 @@
-# Demo 3 - ImageLabels
+# Demo Three - ImageLabels
 
 This demo builds upon the previous demo by showing how to extract meaningful text about a recognized image from the Computer Vision API and superimpose it on top of your view.
 
@@ -81,6 +81,11 @@ Follow these instructions to deploy the application when using the emulator:
 
   > Checkpoint: Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see the default text superimposed on top of it.
 
+1. Copy images to streaming directory
+
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\images\satya-nadella.jpg** to
+  to **`<working-dir>`\HoloWorld\Assets\StreamingAssets**
+
 1. Add scripts for calling Computer Vision API
 
   - For **Text** remove the default text
@@ -94,19 +99,20 @@ Follow these instructions to deploy the application when using the emulator:
   ![add component](setup/add-component-labelled-resized-66.png)
 
   - Click **Add Component** > **Scripts** > **Set Text Satya Nadella**
+
+  > Checkpoint: Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see a **401 Unauthorized** error.
+
+1. Configure scripts for calling Computer Vision API
+
   - For **Script** double click **SetTextSatyaNadella** (Note - this will open the script in Visual Studio)
   - Right click **VisionAPIUtils** in the code and select **Go To Definition**
-  - Replace **YOUR-SUBSCRIPTION-KEY** with your Computer Vision API subscription key
+  - Replace **YOUR_SUBSCRIPTION_KEY** with your Computer Vision API subscription key
+  - Replace **YOUR_BASE_URL** with your Computer Vision API base URL
   - Menu **File** > **Save All**
 
   - From the Unity Editor
   - Menu **File** > **Save Scenes**
   - Menu **File** > **Save Project**
-
-1. Copy images to streaming directory
-
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\images\satya-nadella.jpg** to
-  to **`<working-dir>`\HoloWorld\Assets\StreamingAssets**
 
 ## Run the demo
 

@@ -62,7 +62,7 @@ You will also need to some cloud services.
 	   - From the drop-down text box, select *myCognitiveServices*
    - Wait for the **Quick start** page
    - In the right of the page, click **Keys**
-   - Copy **KEY 1** to a text file
+   - Copy **KEY 1** and the **API endpoint** to a text file
 
 1. Microsoft Text Analytics API **(Wait until the tutorial to do this)**
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
@@ -98,7 +98,7 @@ You will also need to some cloud services.
 	   - From the drop-down text box, select *myCognitiveServices*
    - Wait for the **Quick start** page
    - In the right of the page, click **Keys**
-   - Copy **KEY 1** to a text file
+   - Copy **KEY 1** and the **API endpoint** to a text file
 
 # Demos
 

@@ -9,20 +9,15 @@ This demo builds upon the previous demo by showing how to call the Translation A
 Follow these instructions to deploy the application when using the emulator:
 
 1. Add scripts
-   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\06-Translate\scripts\TranslationAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\07-Translate\scripts\TranslationAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
 
 1. Edit scripts
-   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeOCRRequest** and adding a new line below it that calls **MakeTranslationRequest** as follows:
-   ```
-   //StartCoroutine(VisionAPIUtils.MakeOCRRequest(bytes, "txtImageInfo", typeof(Text)));
-   StartCoroutine(VisionAPIUtils.MakeTranslationRequest(bytes, "txtImageInfo", typeof(Text)));
-   ```
    -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding these consts at the top:
    ```
-   const string TRANSLATE_API_SUBSCRIPTION_KEY = "YOUR-SUBSCRIPTION-KEY";
+   const string TRANSLATE_API_SUBSCRIPTION_KEY = "YOUR_SUBSCRIPTION_KEY";
    const string TRANSLATE_API_URL = "https://api.cognitive.microsofttranslator.com/translate";
    ```
-   -Replace **YOUR-SUBSCRIPTION-KEY** with your Translation API subscription key.
+   -Replace **YOUR_SUBSCRIPTION_KEY** with your Translation API subscription key.
 
    -Add a new function called **MakeTranslationRequest** at the bottom:
    ```
@@ -70,6 +65,11 @@ Follow these instructions to deploy the application when using the emulator:
 			}
 		}
     }
+   ```
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeHandwritingRequest** and adding a new line below it that calls **MakeTranslationRequest** as follows:
+   ```
+   //StartCoroutine(VisionAPIUtils.MakeHandwritingRequest(bytes, "txtImageInfo", typeof(Text)));
+   StartCoroutine(VisionAPIUtils.MakeTranslationRequest(bytes, "txtImageInfo", typeof(Text)));
    ```
 
 ## Run the demo

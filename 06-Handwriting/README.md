@@ -9,20 +9,10 @@ This demo builds upon the previous demo by showing how to call the Vision API on
 Follow these instructions to deploy the application when using the emulator:
 
 1. Add scripts
-   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\07-Handwriting\scripts\HandwritingAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\06-Handwriting\scripts\HandwritingAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
 
 1. Edit scripts
-   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeTranslationRequest** and adding a new line below it that calls **MakeHandwritingRequest** as follows:
-   ```
-   //StartCoroutine(VisionAPIUtils.MakeTranslationRequest(bytes, "txtImageInfo", typeof(Text)));
-   StartCoroutine(VisionAPIUtils.MakeHandwritingRequest(bytes, "txtImageInfo", typeof(Text)));
-   ```
-   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding this at the top:
-   ```
-   const string VISION_API_RECOGNIZETEXT_URL = "https://eastus.api.cognitive.microsoft.com/vision/v2.0/recognizeText";
-   ```
-
-   -Add a new function called **MakeHandwritingRequest** at the bottom of the VisionAPIUtils class:
+   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeHandwritingRequest** at the bottom of the VisionAPIUtils class:
    ```
     public static IEnumerator MakeHandwritingRequest(byte[] bytes, string textComponent, Type type)
     {
@@ -31,7 +21,7 @@ Follow these instructions to deploy the application when using the emulator:
             {"Content-Type","application/octet-stream"}
         };
         string requestParameters = "mode=Handwritten";
-        string uri = VISION_API_RECOGNIZETEXT_URL + "?" + requestParameters;
+        string uri = VISION_API_BASE_URL + "/recognizeText?" + requestParameters;
 		if ( (bytes != null) && (bytes.Length > 0) ) {
 			WWW www = new WWW(uri, bytes, headers);
 			yield return www;
@@ -62,6 +52,11 @@ Follow these instructions to deploy the application when using the emulator:
 			}
 		}
     }
+   ```
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeOCRRequest** and adding a new line below it that calls **MakeHandwritingRequest** as follows:
+   ```
+   //StartCoroutine(VisionAPIUtils.MakeOCRRequest(bytes, "txtImageInfo", typeof(Text)));
+   StartCoroutine(VisionAPIUtils.MakeHandwritingRequest(bytes, "txtImageInfo", typeof(Text)));
    ```
    - Menu **File** > **Save All**
 

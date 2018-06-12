@@ -9,23 +9,17 @@ This demo builds upon the previous demo by showing how to call the Faces API on 
 Follow these instructions to deploy the application when using the emulator:
 
 1. Add scripts
-   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\08-FacialRecognition\scripts\FacesAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+   -Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\08-FacialRecognition\scripts\FacesAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
 
 1. Edit scripts
-   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeHandwritingRequest** and adding a new line below it that calls **MakeFaceRequest** as follows:
-   ```
-   //StartCoroutine(VisionAPIUtils.MakeHandwritingRequest(bytes, "txtImageInfo", typeof(Text)));
-   StartCoroutine(VisionAPIUtils.MakeFaceRequest(bytes, "txtImageInfo", typeof(Text)));
-   ```
    -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding these consts at the top:
    ```
-   const string FACES_API_SUBSCRIPTION_KEY = "YOUR-SUBSCRIPTION-KEY";
-   const string FACES_API_URL = "https://eastus.api.cognitive.microsoft.com/face/v1.0/detect";
+   const string FACES_API_SUBSCRIPTION_KEY = "YOUR_SUBSCRIPTION_KEY";
+   const string FACES_API_BASE_URL = "YOUR_BASE_URL";
    ```
-   -Replace **YOUR-SUBSCRIPTION-KEY** with your Faces API subscription key.
-   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding this at the top:
-
-   -Add a new function called **MakeFaceRequest** at the bottom of the VisionAPIUtils class:
+   -Replace **YOUR_SUBSCRIPTION_KEY** with your Faces API subscription key
+   -Replace **YOUR_BASE_URL** with your Faces API base URL
+   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeFaceRequest** at the bottom of the VisionAPIUtils class:
    ```
     public static IEnumerator MakeFaceRequest(byte[] bytes, string textComponent, Type type)
     {
@@ -34,7 +28,7 @@ Follow these instructions to deploy the application when using the emulator:
             {"Content-Type","application/octet-stream"}
         };
         string requestParameters = "returnFaceAttributes=age,gender,emotion";
-        string uri = FACES_API_URL + "?" + requestParameters;
+        string uri = FACES_API_BASE_URL + "/detect?" + requestParameters;
 		if ( (bytes != null) && (bytes.Length > 0) ) {
 			WWW www = new WWW(uri, bytes, headers);
 			yield return www;
@@ -51,6 +45,11 @@ Follow these instructions to deploy the application when using the emulator:
 			}
 		}
     }
+   ```
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeTranslationRequest** and adding a new line below it that calls **MakeFaceRequest** as follows:
+   ```
+   //StartCoroutine(VisionAPIUtils.MakeTranslationRequest(bytes, "txtImageInfo", typeof(Text)));
+   StartCoroutine(VisionAPIUtils.MakeFaceRequest(bytes, "txtImageInfo", typeof(Text)));
    ```
    - Menu **File** > **Save All**
 

@@ -1,4 +1,4 @@
-# Demo 2 - Cube
+# Demo Two - Cube
 
 This demo shows how to recognize and track an image, and draw a cube on top of it. When running, it looks like this:
 
@@ -38,7 +38,7 @@ For this demo, we will build upon what we did for the previous demo.
    - Click **Add Target**
    - For **Type** select **Single Image**
    - For **File** click **Browse...**
-   - Select **`<working-dir>`\reality-augmentation-using-cognitive-services\images\businesscard.png**
+   - Select **`<working-dir>`\reality-augmentation-using-cognitive-services\02-Cube\images\businesscard.png**
    - Click **Open**
    - For **Width** type **5**
    - For **Name** type **businesscard**
@@ -63,7 +63,7 @@ For this demo, we will build upon what we did for the previous demo.
    ![import package](setup/import-package-labelled-resized-66.png)
 
    - Menu **Assets** > **Import Package** > **Custom Package...**
-   - Browse: **`<working-dir>`\Hololens\HoloWorld.unitypackage**
+   - Browse: **`<working-dir>`\Hololens\HoloWorld\HoloWorld.unitypackage**
 
    ![import all](setup/import-all-labelled-resized-66.png)
 
@@ -79,7 +79,6 @@ For this demo, we will build upon what we did for the previous demo.
    ![license key](setup/license-key-labelled-resized-66.png)
 
    - For **App License Key** paste your **`<vuforia-license-key>`**
-   - Click **Add License**
 
    ![image target](setup/image-target-labelled-resized-66.png)
 

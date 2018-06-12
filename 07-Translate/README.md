@@ -28,7 +28,7 @@ Follow these instructions to deploy the application when using the emulator:
             {"Content-Type","application/octet-stream"}
         };
         string requestParameters = "visualFeatures=Description";
-        string uri = VISION_API_OCR_URL + "?" + requestParameters;
+        string uri = VISION_API_BASE_URL + "/ocr?" + requestParameters;
 		if ( (bytes != null) && (bytes.Length > 0) ) {
 			WWW www = new WWW(uri, bytes, headers);
 			yield return www;

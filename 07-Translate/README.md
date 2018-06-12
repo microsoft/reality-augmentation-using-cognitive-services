@@ -12,14 +12,15 @@ Follow these instructions to deploy the application when using the emulator:
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\07-Translate\scripts\TranslationAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
 
 1. Edit scripts
-   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding these consts at the top:
+
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding these consts at the top:
    ```
    const string TRANSLATE_API_SUBSCRIPTION_KEY = "YOUR_SUBSCRIPTION_KEY";
    const string TRANSLATE_API_URL = "https://api.cognitive.microsofttranslator.com/translate";
    ```
-   -Replace **YOUR_SUBSCRIPTION_KEY** with your Translation API subscription key.
+   - Replace **YOUR_SUBSCRIPTION_KEY** with your Translation API subscription key.
 
-   -Add a new function called **MakeTranslationRequest** at the bottom:
+   - Add a new function called **MakeTranslationRequest** at the bottom:
    ```
     public static IEnumerator MakeTranslationRequest(byte[] bytes, string textComponent, Type type)
     {

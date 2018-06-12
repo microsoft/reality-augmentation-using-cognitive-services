@@ -100,7 +100,7 @@ Follow these instructions to deploy the application when using the emulator:
 
   - Click **Add Component** > **Scripts** > **Set Text Satya Nadella**
 
-  > Checkpoint: Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see a **401 Unauthorized** error.
+  > Checkpoint: Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see a **404 Not Found** error.
 
 1. Configure scripts for calling Computer Vision API
 

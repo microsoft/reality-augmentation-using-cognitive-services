@@ -12,7 +12,7 @@ Follow these instructions to deploy the application when using the emulator:
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\06-Handwriting\scripts\HandwritingAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
 
 1. Edit scripts
-   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeHandwritingRequest** at the bottom of the VisionAPIUtils class:
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeHandwritingRequest** at the bottom of the VisionAPIUtils class:
    ```
     public static IEnumerator MakeHandwritingRequest(byte[] bytes, string textComponent, Type type)
     {

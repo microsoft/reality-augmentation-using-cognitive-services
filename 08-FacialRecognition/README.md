@@ -17,9 +17,9 @@ Follow these instructions to deploy the application when using the emulator:
    const string FACES_API_SUBSCRIPTION_KEY = "YOUR_SUBSCRIPTION_KEY";
    const string FACES_API_BASE_URL = "YOUR_BASE_URL";
    ```
-   -Replace **YOUR_SUBSCRIPTION_KEY** with your Faces API subscription key
-   -Replace **YOUR_BASE_URL** with your Faces API base URL
-   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeFaceRequest** at the bottom of the VisionAPIUtils class:
+   - Replace **YOUR_SUBSCRIPTION_KEY** with your Faces API subscription key
+   - Replace **YOUR_BASE_URL** with your Faces API base URL
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeFaceRequest** at the bottom of the VisionAPIUtils class:
    ```
     public static IEnumerator MakeFaceRequest(byte[] bytes, string textComponent, Type type)
     {

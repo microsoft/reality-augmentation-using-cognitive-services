@@ -23,12 +23,12 @@ This tutorial requires that you have a 64-bit Windows computer with a camera and
 1. Unity Editor
    - Navigate to [Download Unity](https://unity3d.com/get-unity/download)
    - Scroll down and under **Resources** click **Older versions of Unity**
-   - Scroll down and for **Unity 2018.1.0** click **Downloads (Win)** (NOTE: this is the most recent as of this writing)
+   - Scroll down and for **Unity 2018.1.0** click **Downloads (Win)** (NOTE: newer versions have deprecated support for .NET)
    - Select **Unity Editor (64 bit)**
    - Save the installer executable to your `Downloads` folder and double click it
    - Click **Next**, accept the terms of service, click **Next**, click **Next**, select the download folder, click **Next**, and click **Finish**
 
-You will also need to some cloud services.
+You will also need to setup some cloud services.
 
 1. Vuforia
    - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
@@ -46,7 +46,7 @@ You will also need to some cloud services.
 	 - Resource group location: select **West US 2**
    - Click **Create**
 
-1. Microsoft Computer Vision API **(Wait until the tutorial to do this)**
+1. Microsoft Computer Vision API *
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
    - Click **Create a resource**
@@ -57,14 +57,13 @@ You will also need to some cloud services.
 	 - Name: Type in *myComputerVision*
 	 - Subscription: select your subscription
 	 - Pricing tier: select **F0** for free
-	 - Resource group:
-	   - Select **Use existing**
-	   - From the drop-down text box, select *myCognitiveServices*
-   - Wait for the **Quick start** page
-   - In the right of the page, click **Keys**
-   - Copy **KEY 1** and the **API endpoint** to a text file
+	 - Resource group: select *myCognitiveResources* from the drop-down
+     - Click **Create**
+   - When it's ready, go to the resource group and click **myComputerVision**
+   - Click **Overview** and copy **Endpoint** to a text file (you will use this later)
+   - Click **Keys** and copy **KEY 1** to a text file (you will use this later)
 
-1. Microsoft Text Analytics API **(Wait until the tutorial to do this)**
+1. Microsoft Text Analytics API *
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
    - Click **Create a resource**
@@ -75,14 +74,12 @@ You will also need to some cloud services.
 	 - Name: Type in *myTranslatorText*
 	 - Subscription: select your subscription
 	 - Pricing tier: select **F0** for free
-	 - Resource group:
-	   - Select **Use existing**
-	   - From the drop-down text box, select *myCognitiveServices*
-   - Wait for the **Quick start** page
-   - In the right of the page, click **Keys**
-   - Copy **KEY 1** to a text file
+	 - Resource group: select *myCognitiveResources* from the drop-down
+     - Click **Create**
+   - When it's ready, go to the resource group and click **myTranslatorText**
+   - Click **Keys** and copy **KEY 1** to a text file (you will use this later)
 
-1. Microsoft Face API **(Wait until the tutorial to do this)**
+1. Microsoft Face API *
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
    - Click **Create a resource**
@@ -93,12 +90,12 @@ You will also need to some cloud services.
 	 - Name: Type in *myFace*
 	 - Subscription: select your subscription
 	 - Pricing tier: select **F0** for free
-	 - Resource group:
-	   - Select **Use existing**
-	   - From the drop-down text box, select *myCognitiveServices*
-   - Wait for the **Quick start** page
-   - In the right of the page, click **Keys**
-   - Copy **KEY 1** and the **API endpoint** to a text file
+	 - Resource group: select *myCognitiveResources* from the drop-down
+	 - Click **Create**
+   - When it's ready, go to the resource group and click **myFace**
+   - Click **Keys** and copy **KEY 1** to a text file (you will use this later)
+
+* You should hold off doing this until a few days before the tutorial, because free keys keys expire after one week. Otherwise, you might have to refresh your keys beforehand, which typically takes about 10 minutes.
 
 # Demos
 

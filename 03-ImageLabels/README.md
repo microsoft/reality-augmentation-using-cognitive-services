@@ -89,12 +89,12 @@ Follow these instructions to deploy the application when using the emulator:
 1. Add scripts for calling Computer Vision API
 
   - For **Text** remove the default text
-  - Create a **Scripts** folder in **`<working-dir>`\HoloWorld\assets**
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\ImageUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\SetTextSatyaNadella.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\TextUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\VisionAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
-  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\VisionAPIUtils.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+  - Create a **Scripts** folder in **`<working-dir>`\HoloWorld\Assets**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\ImageUtils.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\SetTextSatyaNadella.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\TextUtils.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\VisionAPIResults.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
+  - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\VisionAPIUtils.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
 
   ![add component](setup/add-component-labelled-resized-66.png)
 
@@ -111,7 +111,7 @@ Follow these instructions to deploy the application when using the emulator:
   - Menu **File** > **Save All**
 
   - From the Unity Editor
-  - Menu **File** > **Save Scenes**
+  - Menu **File** > **Save Scene**
   - Menu **File** > **Save Project**
 
 ## Run the demo

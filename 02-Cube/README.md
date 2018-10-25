@@ -102,7 +102,7 @@ For this demo, we will build upon what we did for the previous demo.
    - For **scale** > **x** type **0.25**
    - For **scale** > **y** type **0.25**
    - For **scale** > **z** type **0.25**
-   - Menu **File** > **Save Scenes**
+   - Menu **File** > **Save Scene**
    - Menu **File** > **Save Project**
 
 ## Run the demo

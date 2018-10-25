@@ -46,7 +46,7 @@ You will also need to setup some cloud services.
 	 - Resource group location: select **West US 2**
    - Click **Create**
 
-1. Microsoft Computer Vision API *
+1. Microsoft Computer Vision API **
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
    - Click **Create a resource**
@@ -63,7 +63,7 @@ You will also need to setup some cloud services.
    - Click **Overview** and copy **Endpoint** to a text file (you will use this later)
    - Click **Keys** and copy **KEY 1** to a text file (you will use this later)
 
-1. Microsoft Text Analytics API *
+1. Microsoft Text Analytics API **
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
    - Click **Create a resource**
@@ -79,7 +79,7 @@ You will also need to setup some cloud services.
    - When it's ready, go to the resource group and click **myTranslatorText**
    - Click **Keys** and copy **KEY 1** to a text file (you will use this later)
 
-1. Microsoft Face API *
+1. Microsoft Face API **
    - Navigate to [Azure Portal](https://ms.portal.azure.com)
      - Sign in to the Azure Cloud if requested
    - Click **Create a resource**
@@ -95,7 +95,7 @@ You will also need to setup some cloud services.
    - When it's ready, go to the resource group and click **myFace**
    - Click **Keys** and copy **KEY 1** to a text file (you will use this later)
 
-* You should hold off doing this until a few days before the tutorial, because free keys keys expire after one week. Otherwise, you might have to refresh your keys beforehand, which typically takes about 10 minutes.
+** You should hold off doing this until a few days before the tutorial, because free keys keys expire after one week. Otherwise, you might have to refresh your keys beforehand, which typically takes about 10 minutes.
 
 # Demos
 

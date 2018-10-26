@@ -1,6 +1,6 @@
 # Overview
 
-Augmented reality is hot. Artificial intelligence is hot. Combining the two to create an augmented view of reality where pictures can be identified, tracked, and labeled with meaningful text is a truly fun and exciting experience. This page describes how to use [Unity](https://unity3d.com/unity/beta) and [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to create a desktop application to do just that. The application can be run as-is on the desktop emulator, and it can also be deployed onto the [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens).
+Augmented reality is hot. Artificial intelligence is hot. Combining the two to create an augmented view of reality where pictures can be identified, tracked, and labeled with meaningful text is a truly fun and exciting experience. This page describes how to use [Unity](https://unity3d.com/unity) and [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to create an application to do just that. The application can be run as-is on the desktop emulator, and it can also be deployed onto the [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens).
 
 The application uses the [Microsoft Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/), part of Microsoft Cognitive Services, to extract meaningful text from images. [Vuforia](https://library.vuforia.com/articles/Training/Object-Recognition) is used for image detection and tracking. [Microsoft Visual Studio](https://www.visualstudio.com/) is used to create script actions that call out to the Computer Vision API and also to deploy the application to the HoloLens.
 
@@ -23,7 +23,7 @@ This tutorial requires that you have a 64-bit Windows computer with a camera and
 1. Unity Editor
    - Navigate to [Download Unity](https://unity3d.com/get-unity/download)
    - Scroll down and under **Resources** click **Older versions of Unity**
-   - Scroll down and for **Unity 2018.1.0** click **Downloads (Win)** (NOTE: newer versions have deprecated support for .NET)
+   - Scroll down and for **Unity 2018.1.0** click **Downloads (Win)** (NOTE: Newer versions have deprecated support for .NET. We will discuss how to support more recent versions in future releases of this tutorial)
    - Select **Unity Editor (64 bit)**
    - Save the installer executable to your `Downloads` folder and double click it
    - Click **Next**, accept the terms of service, click **Next**, click **Next**, select the download folder, click **Next**, and click **Finish**

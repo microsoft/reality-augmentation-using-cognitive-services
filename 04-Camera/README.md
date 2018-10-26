@@ -60,11 +60,11 @@ Follow these instructions to deploy the application when using the emulator:
    - For **Right** type **1190**
    - For **Bottom** type **130**
 
+1. Add UI Text
+
    ![create ui text](setup/create-ui-text-resized-66.png)
 
    - Click **SampleScene** > **Create** > **UI** > **Text**
-
-1. Add UI Text
 
    ![ui text properties](setup/ui-text-properties-labelled-resized-66.png)
 

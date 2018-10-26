@@ -95,7 +95,7 @@ You will also need to setup some cloud services.
    - When it's ready, go to the resource group and click **myFace**
    - Click **Keys** and copy **KEY 1** to a text file (you will use this later)
 
-** You should hold off doing this until a few days before the tutorial, because free keys expire after one week. Otherwise, you might have to refresh your keys beforehand, which typically takes about 10 minutes.
+** You should hold off doing this until a few days before the tutorial, because free keys expire after one week. Otherwise, you might have to refresh your keys beforehand, which can take up to 10 minutes.
 
 # Demos
 

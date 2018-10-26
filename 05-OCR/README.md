@@ -9,10 +9,10 @@ This demo builds upon the previous demo by showing how to call the Computer Visi
 Follow these instructions to deploy the application when using the emulator:
 
 1. Add scripts
-   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\05-OCR\scripts\OCRAPIResults.cs** to **`<working-dir>`\HoloWorld\assets\Scripts**
+   - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\05-OCR\scripts\OCRAPIResults.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
 
 1. Edit scripts
-   -Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeOCRRequest** at the bottom of the **VisionAPIUtils** class:
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeOCRRequest** at the bottom of the **VisionAPIUtils** class:
    ```
    public static IEnumerator MakeOCRRequest(byte[] bytes, string textComponent, Type type)
    {
@@ -22,7 +22,7 @@ Follow these instructions to deploy the application when using the emulator:
            {"Content-Type","application/octet-stream"}
        };
        string requestParameters = "visualFeatures=Description&language=en";
-       string uri = VISION_API_BASE_URL + "/ocr?" + requestParameters;
+	   string uri = VISION_API_BASE_URL + "/vision/v1.0/ocr?" + requestParameters;
 	   if ( (bytes != null) && (bytes.Length > 0) ) {
 		   WWW www = new WWW(uri, bytes, headers);
 		   yield return www;

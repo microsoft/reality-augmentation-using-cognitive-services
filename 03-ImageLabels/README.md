@@ -111,7 +111,7 @@ Follow these instructions to deploy the application when using the emulator:
    - Menu **File** > **Save All**
 
    - From the Unity Editor
-   - Menu **File** > **Save Scene**
+   - Menu **File** > **Save Scenes**
    - Menu **File** > **Save Project**
 
 ## Run the demo

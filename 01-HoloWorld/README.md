@@ -98,7 +98,7 @@ Follow these instructions to deploy and run the application in the emulator:
 
    - click **Color**
    - in the **Color** dialog that opens, set **R**, **G**, and **B** to **255**
-   - menu **File** > **Save Scene**
+   - menu **File** > **Save Scenes**
    - menu **File** > **Save Project**
 
 ## Run the demo

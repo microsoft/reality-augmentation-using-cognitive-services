@@ -8,10 +8,19 @@ This demo builds upon the previous demo by showing how to call the Vision API on
 
 Follow these instructions to deploy the application when using the emulator:
 
+1. Add option
+
+   - Select **ddAction**
+   - Add a **Handwriting** option
+
+   ![add option](setup/add-option-ocr-labelled.png)
+
 1. Add scripts
+
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\06-Handwriting\scripts\HandwritingAPIResults.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
 
 1. Edit scripts
+
    - Edit **`<working-dir>`\HoloWorld\Assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeHandwritingRequest** at the bottom of the VisionAPIUtils class:
    ```
     public static IEnumerator MakeHandwritingRequest(byte[] bytes, string textComponent, Type type)
@@ -53,19 +62,20 @@ Follow these instructions to deploy the application when using the emulator:
 		}
     }
    ```
-   - Edit **`<working-dir>`\HoloWorld\Assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeOCRRequest** and adding a new line below it that calls **MakeHandwritingRequest** as follows:
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by adding a new case statement that calls **MakeHandwritingRequest** as follows:
    ```
-   //StartCoroutine(VisionAPIUtils.MakeOCRRequest(bytes, "txtImageInfo", typeof(Text)));
-   StartCoroutine(VisionAPIUtils.MakeHandwritingRequest(bytes, "txtImageInfo", typeof(Text)));
+	case 2: // Handwriting
+		StartCoroutine(VisionAPIUtils.MakeHandwritingRequest(bytes, "txtImageInfo", typeof(Text)));
+		break;
    ```
    - Menu **File** > **Save All**
 
    - From the Unity Editor
    - Menu **File** > **Save Scenes**
-   - Menu **File** > **Save Project**
+   - Menu **File** > **Save Project** 
 
 ## Run the demo
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you hold some handwritten text in front of your computer's camera and click the **Identify** button, you will see the recognized text extracted from the image. As an example, you can use a printout or a phone capture of the text image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\07-Handwriting\images\cursive.png**.
+  - Click **Run**. If you hold some handwritten text in front of your computer's, camera select **Handwriting**, and click the **Go** button, you will see the recognized text extracted from the image. As an example, you can use a printout or a phone capture of the text image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\07-Handwriting\images\cursive.png**.

@@ -14,7 +14,6 @@ Follow these instructions to deploy the application when using the emulator:
    - Login
    - Click **Target Manager**
    - Under **Database** click **HoloWorld**
-   
    - Click **Add Target**
    - For **Type** select **Single Image**
    - For **File** click **Browse...**

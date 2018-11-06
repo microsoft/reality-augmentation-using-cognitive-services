@@ -5,8 +5,8 @@ public class ButtonHandler : MonoBehaviour
 {
     void Start()
     {
-        Button btnIdentify = GameObject.Find("btnIdentify").GetComponent<Button>();
-        btnIdentify.onClick.AddListener(TaskOnClick);
+        Button btnGo = GameObject.Find("btnGo").GetComponent<Button>();
+        btnGo.onClick.AddListener(TaskOnClick);
     }
 
     void TaskOnClick()

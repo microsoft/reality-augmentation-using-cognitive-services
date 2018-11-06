@@ -17,7 +17,15 @@ public class SetImageLabel : MonoBehaviour
         {
             byte[] bytes = image;
             image = null;
-            StartCoroutine(VisionAPIUtils.MakeAnalysisRequest(bytes, "txtImageInfo", typeof(Text)));
+
+            Dropdown ddAction = GameObject.Find("ddAction").GetComponent<Dropdown>();
+            int selectedAction = ddAction.value;
+            switch (selectedAction)
+            {
+                case 0: // identify
+                    StartCoroutine(VisionAPIUtils.MakeAnalysisRequest(bytes, "txtImageInfo", typeof(Text)));
+                    break;
+            }
         }
     }
 }

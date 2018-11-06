@@ -13,20 +13,20 @@ Follow these instructions to deploy the application when using the emulator:
    - Start **Unity**
    - Click **Projects** > **HoloWorld**
    - Select **SampleScene** > **Create** > **UI** > **Dropdown**
-   
+
    ![create ui dropdown](setup/create-ui-dropdown-resized-80.png)
-   
+
    - Rename **Dropdown** to **ddAction**. Click *enter* to save the name change.
    - For **Pos X** type **-650**
    - For **Pos Y** type **300**
-   
+
    ![image properties](setup/ui-dropdown-properties-labelled.png)
-   
+
    - Remove default options
    - Add option **Identify**
-   
+
    ![image properties](setup/ui-dropdown-options.png)
-   
+
 1. Add UI Button
 
    - Click **SampleScene** > **Create** > **UI** > **Button**
@@ -39,7 +39,7 @@ Follow these instructions to deploy the application when using the emulator:
    - For **Width** type **100**
 
    ![ui button properties](setup/ui-button-properties-labelled.png)
-   
+
    - Expand **btnGo**
    - Select **Text**
    - For **Text** type **Go**
@@ -65,7 +65,7 @@ Follow these instructions to deploy the application when using the emulator:
    - Click **SampleScene** > **Create** > **UI** > **Panel**
 
    ![create ui panel](setup/create-ui-panel-resized-66.png)
-   
+
    - Rename **Panel** to **pnlImageInfo**. Click *enter* to save the name change.
    - For **Left** type **30**
    - For **Top** type **330**
@@ -90,7 +90,7 @@ Follow these instructions to deploy the application when using the emulator:
 
    ![ui text properties](setup/ui-text-properties-labelled-resized-66.png)
 
-   > Checkpoint: Click **Run**. For now you will see the layout of the new UI components. This won't do anything yet, but in the next section we will configure scripts so that when you click the **Identify** button your device's camera takes a picture, sends the image to the Computer Vision API, and the results are displayed. *Note:* you may need to click **Maximize On Play** to see the components.
+   > Checkpoint: Click **Run**. For now you will see the layout of the new UI components. This won't do anything yet, but in the next section we will configure scripts so that when you click the **Go** button your device's camera takes a picture, sends the image to the Computer Vision API, and the results are displayed. *Note:* you may need to click **Maximize On Play** to see the components.
 
 1. Add scripts
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\04-Camera\scripts\ButtonHandler.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
@@ -102,17 +102,17 @@ Follow these instructions to deploy the application when using the emulator:
    - Click **btnGo**
    - Click **Add Component** > **Scripts** > **Button Handler**
 
-   ![add button script](setup/add-button-script-labelled-resized-66.png)
-   
+   ![add button script](setup/add-button-script-labelled.png)
+
    - Click **txtImageInfo**
    - Click **Add Component** > **Scripts** > **Set Image Label**
    - Menu **File** > **Save Scenes**
    - Menu **File** > **Save Project**
 
-   ![add text script](setup/add-text-script-labelled-resized-66.png)
+   ![add text script](setup/add-text-script-labelled.png)
 
 ## Run the demo
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you hold your cellphone in front of your computer's camera and click the **Identify** button, it will use the device camera to take a picture, send it to the Computer Vision API, and overlay information about it on top of it in your view.
+  - Click **Run**. If you hold your cellphone in front of your computer's camera and click the **Go** button, it will use the device camera to take a picture, send it to the Computer Vision API, and overlay information about it on top of it in your view.

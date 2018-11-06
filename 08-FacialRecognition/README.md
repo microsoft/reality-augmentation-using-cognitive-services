@@ -11,7 +11,7 @@ Follow these instructions to deploy the application when using the emulator:
 1. Add option
 
    - Select **ddAction**
-   - Add an **Face** option
+   - Add a **Face** option
 
    ![add option](setup/add-option-face-labelled.png)
 

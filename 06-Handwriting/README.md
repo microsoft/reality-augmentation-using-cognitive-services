@@ -13,7 +13,7 @@ Follow these instructions to deploy the application when using the emulator:
    - Select **ddAction**
    - Add a **Handwriting** option
 
-   ![add option](setup/add-option-ocr-labelled.png)
+   ![add option](setup/add-option-handwriting-labelled.png)
 
 1. Add scripts
 

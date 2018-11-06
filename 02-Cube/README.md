@@ -70,6 +70,10 @@ For this demo, we will build upon what we did for the previous demo.
    - Click **Open** > **All** > **Import**
 
    ![import all](setup/import-all-labelled-resized-66.png)
+   
+1. Remove "Holo World!" text
+
+   - Select the **Text** component created in the first demo and delete it
 
 1. Create cube on top of recognized image in Unity project
 

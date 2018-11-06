@@ -87,7 +87,7 @@ For this demo, we will build upon what we did for the previous demo.
 
    ![image target](setup/image-target-labelled-resized-66.png)
 
-   - In the **Inspector** window, for **ImageTarget** type *BusinessCardTarget*
+   - In the **Inspector** window, rename **ImageTarget** to **BusinessCardTarget**. Click *enter* to save the name change.
    - For **Database** select **HoloWorld**
    - For **Image Target** select **businesscard**
 

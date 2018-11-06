@@ -58,7 +58,7 @@ Follow these instructions to deploy the application when using the emulator:
 
    ![image target](setup/image-target-labelled-resized-66.png)
 
-   - For **ImageTarget** type **SatyaNadellaTarget**
+   - Rename **ImageTarget** to **SatyaNadellaTarget**. Click *enter* to save the name change.
    - For **Database** select **HoloWorld**
    - For **Image Target** select **satya-nadella**
    
@@ -69,7 +69,7 @@ Follow these instructions to deploy the application when using the emulator:
 
    ![create text](setup/create-text-labelled-resized-66.png)
 
-   - For **New Text** type **SatyaNadellaText**
+   - Rename **New Text** to **SatyaNadellaText**. . Click *enter* to save the name change.
    - For **position** > **x** type **-1**
    - For **rotation** > **x** type **90**
    - For **scale** > **x** type **0.1**

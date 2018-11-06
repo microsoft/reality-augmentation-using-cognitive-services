@@ -34,7 +34,6 @@ For this demo, we will build upon what we did for the previous demo.
    - Select **Device**
    - Click **Create**
    - Under **Database** click **HoloWorld**
-   
    - Click **Add Target**
    - For **Type** select **Single Image**
    - For **File** click **Browse...**
@@ -63,7 +62,6 @@ For this demo, we will build upon what we did for the previous demo.
 
    - Start **Unity**
    - Click **Projects** > **HoloWorld**
-   
    - Menu **Assets** > **Import Package** > **Custom Package...**
    - Browse: **`<working-dir>`\Hololens\HoloWorld\HoloWorld.unitypackage**
 

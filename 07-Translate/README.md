@@ -8,7 +8,15 @@ This demo builds upon the previous demo by showing how to call the Translation A
 
 Follow these instructions to deploy the application when using the emulator:
 
+1. Add option
+
+   - Select **ddAction**
+   - Add an **Translate** option
+
+   ![add option](setup/add-option-translate-labelled.png)
+
 1. Add scripts
+
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\07-Translate\scripts\TranslationAPIResults.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
 
 1. Edit scripts
@@ -67,14 +75,20 @@ Follow these instructions to deploy the application when using the emulator:
 		}
     }
    ```
-   - Edit **`<working-dir>`\HoloWorld\Assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeHandwritingRequest** and adding a new line below it that calls **MakeTranslationRequest** as follows:
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by adding a new case statement that calls **MakeTranslationRequest** as follows:
    ```
-   //StartCoroutine(VisionAPIUtils.MakeHandwritingRequest(bytes, "txtImageInfo", typeof(Text)));
-   StartCoroutine(VisionAPIUtils.MakeTranslationRequest(bytes, "txtImageInfo", typeof(Text)));
+	case 3: // Translate
+		StartCoroutine(VisionAPIUtils.MakeTranslationRequest(bytes, "txtImageInfo", typeof(Text)));
+		break;
    ```
+   - Menu **File** > **Save All**
+
+   - From the Unity Editor
+   - Menu **File** > **Save Scenes**
+   - Menu **File** > **Save Project**   
 
 ## Run the demo
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you hold some text in front of your computer's camera and click the **Identify** button, you will see the text extracted from the image and translated into Chinese. As an example, you can use a printout or a phone capture of the text image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\06-Translate\images\text.png**.
+  - Click **Run**. If you hold some text in front of your computer's camera, select **Translate**, and click the **Go** button,, you will see the text extracted from the image and translated into Chinese. As an example, you can use a printout or a phone capture of the text image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\06-Translate\images\text.png**.

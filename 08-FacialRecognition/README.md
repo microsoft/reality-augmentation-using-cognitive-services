@@ -8,10 +8,19 @@ This demo builds upon the previous demo by showing how to call the Faces API on 
 
 Follow these instructions to deploy the application when using the emulator:
 
+1. Add option
+
+   - Select **ddAction**
+   - Add an **Face** option
+
+   ![add option](setup/add-option-face-labelled.png)
+
 1. Add scripts
+
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\08-FacialRecognition\scripts\FacesAPIResults.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
 
 1. Edit scripts
+
    - Edit **`<working-dir>`\HoloWorld\Assets\Scripts\VisionAPIUtils.cs** by adding these consts at the top:
    ```
    const string FACES_API_SUBSCRIPTION_KEY = "YOUR_SUBSCRIPTION_KEY";
@@ -46,19 +55,20 @@ Follow these instructions to deploy the application when using the emulator:
 		}
     }
    ```
-   - Edit **`<working-dir>`\HoloWorld\Assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeTranslationRequest** and adding a new line below it that calls **MakeFaceRequest** as follows:
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by adding a new case statement that calls **MakeFaceRequest** as follows:
    ```
-   //StartCoroutine(VisionAPIUtils.MakeTranslationRequest(bytes, "txtImageInfo", typeof(Text)));
-   StartCoroutine(VisionAPIUtils.MakeFaceRequest(bytes, "txtImageInfo", typeof(Text)));
+	case 4: // Face
+		StartCoroutine(VisionAPIUtils.MakeFaceRequest(bytes, "txtImageInfo", typeof(Text)));
+		break;
    ```
    - Menu **File** > **Save All**
 
    - From the Unity Editor
    - Menu **File** > **Save Scenes**
-   - Menu **File** > **Save Project**
+   - Menu **File** > **Save Project**   
 
 ## Run the demo
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you position someone in front of your devices's camera and click the **Identify** button, you will see facial characteristics of that person including age, gender, and emotion.
+  - Click **Run**. If you position someone in front of your devices's camera, select **Face**, and click the **Go** button, you will see facial characteristics of that person including age, gender, and emotion.

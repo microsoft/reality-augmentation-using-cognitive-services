@@ -10,13 +10,14 @@ For this demo, we will build upon what we did for the previous demo.
 
 1. Download the contents of this repo as a zip into a local working directory
 
-   ![download zip](setup/download-zip-labelled-resized-66.png)
-
    - If you haven't already, create a local working directory which we'll refer to as `<working-dir>` (Example: **c:\hololens**)
    - Click **Clone or download** > **Download ZIP**
    - Save and extract the zip into `<working-dir>`
+   
+   ![download zip](setup/download-zip-labelled-resized-66.png)
 
 1. Create Vuforia license key
+
    - Navigate to [Vuforia Developer Portal](https://developer.vuforia.com)
    - Login
    - Click **Develop** > **License Manager** > **Get Development Key**
@@ -27,14 +28,13 @@ For this demo, we will build upon what we did for the previous demo.
    - Make a note of this license key, which we'll refer to as `<vuforia-license-key>` You will need in later in your Unity project.
 
 1. Create Vuforia image database
+
    - In the **Vuforia Developer Portal**, click **Target Manager** > **Add Database**
    - For **Name** type **HoloWorld**
    - Select **Device**
    - Click **Create**
    - Under **Database** click **HoloWorld**
-
-   ![add target](setup/add-target-labelled-resized-66.png)
-
+   
    - Click **Add Target**
    - For **Type** select **Single Image**
    - For **File** click **Browse...**
@@ -44,70 +44,74 @@ For this demo, we will build upon what we did for the previous demo.
    - For **Name** type **businesscard**
    - Click **Add**
 
-1. Download Vuforia image database
+   ![add target](setup/add-target-labelled-resized-66.png)
 
-   ![click download database](setup/click-download-database-labelled-resized-66.png)
+1. Download Vuforia image database
 
    - Click **Download Database (All)**
 
-   ![download database](setup/download-database-labelled-resized-66.png)
-
+   ![click download database](setup/click-download-database-labelled-resized-66.png)
+   
    - Select **Unity Editor**
    - Click **Download**
    - Click **Save As** > **`<working-dir>`\HoloWorld.unitypackage**
    - Click **Save**
+
+   ![download database](setup/download-database-labelled-resized-66.png)
+
 1. Import Vuforia image database into Unity project
+
    - Start **Unity**
    - Click **Projects** > **HoloWorld**
-
-   ![import package](setup/import-package-labelled-resized-66.png)
-
+   
    - Menu **Assets** > **Import Package** > **Custom Package...**
    - Browse: **`<working-dir>`\Hololens\HoloWorld\HoloWorld.unitypackage**
 
-   ![import all](setup/import-all-labelled-resized-66.png)
-
+   ![import package](setup/import-package-labelled-resized-66.png)
+   
    - Click **Open** > **All** > **Import**
 
-1. Create cube on top of recognized image in Unity project
+   ![import all](setup/import-all-labelled-resized-66.png)
 
-   ![vuforia configuration](setup/vuforia-configuration-labelled-resized-66.png)
+1. Create cube on top of recognized image in Unity project
 
    - Click **AR Camera**
    - In the **Inspector** window, click **Open Vuforia configuration**
 
-   ![license key](setup/license-key-labelled-resized-66.png)
+   ![vuforia configuration](setup/vuforia-configuration-labelled-resized-66.png)
 
    - For **App License Key** paste your **`<vuforia-license-key>`**
 
-   ![image target](setup/image-target-labelled-resized-66.png)
+   ![license key](setup/license-key-labelled-resized-66.png)
 
    - Select **SampleScene**
-   - Click **Create** > **Vuforia** > **Image**
+   - Click **Create** > **Vuforia** > **Image**  
 
-   ![target properties](setup/target-properties-labelled-resized-66.png)
+   ![image target](setup/image-target-labelled-resized-66.png)
 
    - In the **Inspector** window, for **ImageTarget** type *BusinessCardTarget*
    - For **Database** select **HoloWorld**
    - For **Image Target** select **businesscard**
 
-   ![create cube](setup/create-cube-labelled-resized-66.png)
+   ![target properties](setup/target-properties-labelled-resized-66.png)
 
    - In the **SampleScene**, right click **BusinessCardTarget**
    - Select **3D Object** > **Cube**
 
-   ![cube properties](setup/cube-properties-labelled-resized-66.png)
+   ![create cube](setup/create-cube-labelled-resized-66.png)
 
    - In the **Inspector** window, for **position** > **y** type **0.5**
    - For **scale** > **x** type **0.25**
    - For **scale** > **y** type **0.25**
    - For **scale** > **z** type **0.25**
+
+   ![cube properties](setup/cube-properties-labelled-resized-66.png)
+   
    - Menu **File** > **Save Scenes**
    - Menu **File** > **Save Project**
 
 ## Run the demo
 
-![play](setup/play-labelled-resized-66.png)
+   - Click **Run**. If you hold the business card in front of your computer's camera, you will see cube on top of it. If you do not have the business card, you can use a printout or a phone capture of the image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\02-Cube\images\businesscard.png**.
 
-- Click **Run**. If you hold the business card in front of your computer's camera, you will see cube on top of it.
-- Note: If you do not have the business card, you can use an image you uploaded to a smartphone
+   ![play](setup/play-labelled-resized-66.png)

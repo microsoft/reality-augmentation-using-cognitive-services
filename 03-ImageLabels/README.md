@@ -14,9 +14,7 @@ Follow these instructions to deploy the application when using the emulator:
    - Login
    - Click **Target Manager**
    - Under **Database** click **HoloWorld**
-
-   ![add target](setup/add-target-labelled-resized-66.png)
-
+   
    - Click **Add Target**
    - For **Type** select **Single Image**
    - For **File** click **Browse...**
@@ -25,6 +23,8 @@ Follow these instructions to deploy the application when using the emulator:
    - For **Width** type **5**
    - For **Name** type **satya-nadella**
    - Click **Add**
+
+   ![add target](setup/add-target-labelled-resized-66.png)
 
 1. Download updated Vuforia image database
 

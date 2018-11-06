@@ -8,10 +8,19 @@ This demo builds upon the previous demo by showing how to call the Computer Visi
 
 Follow these instructions to deploy the application when using the emulator:
 
+1. Add option
+
+   - Select **ddAction**
+   - Add an **OCR** option
+
+   ![add option](setup/add-option-ocr-labelled.png)
+
 1. Add scripts
+
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\05-OCR\scripts\OCRAPIResults.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
 
 1. Edit scripts
+
    - Edit **`<working-dir>`\HoloWorld\assets\Scripts\VisionAPIUtils.cs** by adding a new function called **MakeOCRRequest** at the bottom of the **VisionAPIUtils** class:
    ```
    public static IEnumerator MakeOCRRequest(byte[] bytes, string textComponent, Type type)
@@ -39,10 +48,11 @@ Follow these instructions to deploy the application when using the emulator:
 	   }
    }
    ```
-   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by commenting out the call to **MakeAnalysisRequest** and adding a new line below it that calls **MakeOCRRequest** as follows:
+   - Edit **`<working-dir>`\HoloWorld\assets\Scripts\SetImageLabels.cs** by adding a new case statement that calls **MakeOCRRequest** as follows:
    ```
-   //StartCoroutine(VisionAPIUtils.MakeAnalysisRequest(bytes, "txtImageInfo", typeof(Text)));
-   StartCoroutine(VisionAPIUtils.MakeOCRRequest(bytes, "txtImageInfo", typeof(Text)));
+	case 1: // OCR
+		StartCoroutine(VisionAPIUtils.MakeOCRRequest(bytes, "txtImageInfo", typeof(Text)));
+		break;
    ```
    - Menu **File** > **Save All**
 
@@ -54,4 +64,4 @@ Follow these instructions to deploy the application when using the emulator:
 
   ![play](setup/play-labelled-resized-66.png)
 
-  - Click **Run**. If you hold some text in front of your computer's camera and click the **Identify** button, you will see the text extracted from the image. As an example, you can use a printout or a phone capture of the text image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\05-OCR\images\text.png**.
+  - Click **Run**. If you hold some text in front of your computer's camera, select **OCR**, and click the **Go** button, you will see the text extracted from the image. As an example, you can use a printout or a phone capture of the text image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\05-OCR\images\text.png**.

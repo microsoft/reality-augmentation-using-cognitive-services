@@ -27,49 +27,47 @@ Follow these instructions to deploy the application when using the emulator:
 
 1. Download updated Vuforia image database
 
-   ![click download database](setup/click-download-database-labelled-resized-66.png)
-
    - Click **Download Database (All)**
 
-   ![download database](setup/download-database-labelled-resized-66.png)
+   ![click download database](setup/click-download-database-labelled-resized-66.png)
 
    - Select **Unity Editor**
    - Click **Download**
    - Click **Save As** > **`<working-dir>`\HoloWorld.unitypackage**
    - Click **Save** (Note - go ahead and overwrite the existing one)
+   
+   ![download database](setup/download-database-labelled-resized-66.png)
 
 1. Import updated Vuforia image database into Unity project
+
    - Start **Unity**
    - Click **Projects** > **HoloWorld**
-
-   ![import package](setup/import-package-labelled-resized-66.png)
-
    - Menu **Assets** > **Import Package** > **Custom Package...**
    - Browse: **`<working-dir>`\Hololens\HoloWorld.unitypackage**
-
-   ![import all](setup/import-all-labelled-resized-66.png)
+   
+   ![import package](setup/import-package-labelled-resized-66.png)
 
    - Click **Open** > **All** > **Import**
 
-1. Create image target
+   ![import all](setup/import-all-labelled-resized-66.png)
 
-   ![image target](setup/image-target-labelled-resized-66.png)
+1. Create image target
 
    - Select **SampleScene**
    - Click **Create** > **Vuforia** > **Image**
 
-   ![text properties](setup/image-target-properties-labelled-resized-66.png)
+   ![image target](setup/image-target-labelled-resized-66.png)
 
    - For **ImageTarget** type **SatyaNadellaTarget**
    - For **Database** select **HoloWorld**
    - For **Image Target** select **satya-nadella**
-
-   ![create text](setup/create-text-labelled-resized-66.png)
+   
+   ![text properties](setup/image-target-properties-labelled-resized-66.png)
 
    - Right click **SatyaNadellaTarget**
    - Select **3D Object** > **3D Text**
 
-   ![text properties](setup/text-properties-labelled-resized-66.png)
+   ![create text](setup/create-text-labelled-resized-66.png)
 
    - For **New Text** type **SatyaNadellaText**
    - For **position** > **x** type **-1**
@@ -77,6 +75,8 @@ Follow these instructions to deploy the application when using the emulator:
    - For **scale** > **x** type **0.1**
    - For **scale** > **y** type **0.1**
    - For **scale** > **z** type **0.1**
+
+   ![text properties](setup/text-properties-labelled-resized-66.png)
 
    > Checkpoint: Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see the default text superimposed on top of it.
 
@@ -94,10 +94,9 @@ Follow these instructions to deploy the application when using the emulator:
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\TextUtils.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\VisionAPIResults.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
    - Copy **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\scripts\VisionAPIUtils.cs** to **`<working-dir>`\HoloWorld\Assets\Scripts**
+   - Click **Add Component** > **Scripts** > **Set Text Satya Nadella**
 
    ![add component](setup/add-component-labelled-resized-66.png)
-
-   - Click **Add Component** > **Scripts** > **Set Text Satya Nadella**
 
    > Checkpoint: Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see a **404 Not Found** error.
 
@@ -108,13 +107,12 @@ Follow these instructions to deploy the application when using the emulator:
    - Replace **YOUR_SUBSCRIPTION_KEY** with your Computer Vision API subscription key
    - Replace **YOUR_BASE_URL** with your Computer Vision API base URL
    - Menu **File** > **Save All**
-
    - From the Unity Editor
    - Menu **File** > **Save Scenes**
    - Menu **File** > **Save Project**
 
 ## Run the demo
 
-   ![play](setup/play-labelled-resized-66.png)
+   - Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see information about him superimposed on top of it. If you do not have the picture, you can use a phone capture of the image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\03-ImageLabels\images\satya-nadella.jpg**.
 
-   - Click **Run**. If you hold the picture of Satya Nadella in front of your computer's camera, you will see information about him superimposed on top of it.
+   ![play](setup/play-labelled-resized-66.png)

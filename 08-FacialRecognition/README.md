@@ -69,6 +69,6 @@ Follow these instructions to deploy the application when using the emulator:
 
 ## Run the demo
 
-  ![play](setup/play-labelled-resized-66.png)
-
   - Click **Run**. If you position someone in front of your devices's camera, select **Face**, and click the **Go** button, you will see facial characteristics of that person including age, gender, and emotion.
+
+  ![play](setup/play-labelled-resized-66.png)

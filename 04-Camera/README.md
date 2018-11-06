@@ -113,6 +113,6 @@ Follow these instructions to deploy the application when using the emulator:
 
 ## Run the demo
 
-  ![play](setup/play-labelled-resized-66.png)
-
   - Click **Run**. If you hold your cellphone in front of your computer's camera and click the **Go** button, it will use the device camera to take a picture, send it to the Computer Vision API, and overlay information about it on top of it in your view.
+
+  ![play](setup/play-labelled-resized-66.png)

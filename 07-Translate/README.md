@@ -89,6 +89,6 @@ Follow these instructions to deploy the application when using the emulator:
 
 ## Run the demo
 
-  ![play](setup/play-labelled-resized-66.png)
-
   - Click **Run**. If you hold some text in front of your computer's camera, select **Translate**, and click the **Go** button,, you will see the text extracted from the image and translated into Chinese. As an example, you can use a printout or a phone capture of the text image found at **`<working-dir>`\reality-augmentation-using-cognitive-services\06-Translate\images\text.png**.
+
+  ![play](setup/play-labelled-resized-66.png)

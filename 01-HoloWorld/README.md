@@ -53,6 +53,9 @@ Follow these instructions to deploy and run the application in the emulator:
    - click **XR Settings**
    - check **Virtual Reality Supported**
    - click the **Vuforia Augmented Reality** link
+   
+   ![xr settings](setup/xr-settings-labelled-resized-66.png)
+   
    - save the installer executable to `Downloads`
    - close **Unity**
    - double click the installer executable
@@ -60,12 +63,9 @@ Follow these instructions to deploy and run the application in the emulator:
    - start **Unity**
    - click **Projects** > **HoloWorld**
    - menu **File** > **Build Settings...**
-
-   ![xr settings](setup/xr-settings-labelled-resized-66.png)
-   
    - click **Player Settings...**
    - In the **Inspector** window that opens, click **XR Settings**
-   - check **Vuforia Augmented Reality**, accept the conditions, click **Finish**
+   - check **Vuforia Augmented Reality**
 
    ![check vuforia](setup/check-vuforia-labelled-resized-66.png)
 

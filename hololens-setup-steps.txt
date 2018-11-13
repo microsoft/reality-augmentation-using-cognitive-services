@@ -1,6 +1,0 @@
-need to install universal windows stuff (requires closing unity and visual studio)
-need to configure configuration to use universal windows
-need PIN to HoloLens when deploying
-	Settings > Update & Security > For developers > Pair > <PIN>
-	type:<PIN>
-	click:OK

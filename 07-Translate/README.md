@@ -49,7 +49,7 @@ Follow these instructions to deploy the application when using the emulator:
 			else
 			{
 				OCRAPIResults results = JsonUtility.FromJson<OCRAPIResults>(www.text);
-				string text = results.ToString();
+				string text = results.ToString().Replace(" ", "");
 				var requestBody = "[{\"Text\":\"" + text + "\"}]";
 				byte[] textBytes = System.Text.Encoding.UTF8.GetBytes(requestBody.ToCharArray());
 				var headers2 = new Dictionary<string, string>() {
